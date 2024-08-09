@@ -8,9 +8,9 @@ googleAnalytics = "G-XFCYQ29SLK"  # add your tracking id
 
 [params]
   author = "Jie-Ying Lee"
-  description = "A simple monospaced resume theme for Hugo."
+  description = "Jie-Ying Lee's personal website"
   favicon = "favicon.ico"  # path to a .ico to use as favicon
-  logo = ""  # url or path to a logo to put in the header
+  logo = "android-chrome-512x512.png"  # url or path to a logo to put in the header
   [params.footer]
     text = "By Jie-Ying Lee"
     url = "https://jayinnn.dev/"
