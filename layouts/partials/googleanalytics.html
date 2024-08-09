@@ -1,5 +1,6 @@
 {{- $pc := .Site.Config.Privacy.GoogleAnalytics -}}
 {{- if not $pc.Disable }}{{ with .Site.GoogleAnalytics -}}
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XFCYQ29SLK"></script>
 <script>
 {{- if not $pc.RespectDoNotTrack -}}
 var doNotTrack = false;
