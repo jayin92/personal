@@ -14,7 +14,7 @@ ETH Zürich, Switzerland
 
 Email: [jayinnn.cs10@nycu.edu.tw](mailto:jayinnn.cs10@nycu.edu.tw), [jielee@ethz.ch](mailto:jielee@ethz.ch)
 
-[Personal Page](https://jayinnn.dev) | [GitHub](http://github.com/jayin92) | [LinkedIn](https://www.linkedin.com/in/jayinnn/) | [Google Scholar](https://scholar.google.com/citations?view_op=list_works&hl=zh-TW&user=mKB6voEAAAAJ) | [CV](https://raw.githubusercontent.com/jayin92/CV/main/cv.pdf)
+[Personal Page](https://jayinnn.dev) | [GitHub](http://github.com/jayin92) | [LinkedIn](https://www.linkedin.com/in/jayinnn/) | [Google Scholar](https://scholar.google.com/citations?view_op=list_works&hl=zh-TW&user=mKB6voEAAAAJ) | [Personal Blog](https://blog.jayinnn.dev/) | [CV](https://raw.githubusercontent.com/jayin92/CV/main/cv.pdf)
 
 
 
