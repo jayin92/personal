@@ -7,12 +7,12 @@ math = false          # enable KaTeX (https://katex.org/) globally
 googleAnalytics = "G-XFCYQ29SLK"  # add your tracking id
 
 [params]
-  author = "Jie-Ying Lee"
+  author = "Jie-Ying Lee 李杰穎"
   description = "Jie-Ying Lee's personal website"
   favicon = "favicon.ico"  # path to a .ico to use as favicon
   logo = ""  # url or path to a logo to put in the header
   [params.footer]
-    text = "By Jie-Ying Lee"
+    text = "By Jie-Ying Lee 李杰穎"
     url = "https://jayinnn.dev/"
   [params.style]  # appearance options (can be omitted)
     fontFamily = "'Lato', Verdana, Helvetica, sans-serif"
