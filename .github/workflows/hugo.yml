@@ -20,7 +20,13 @@ jobs:
         run: |
           git lfs install
           git lfs pull
-
+      
+      # Copy LFS files to ensure they're included in the build
+      - name: Copy LFS files
+        run: |
+          mkdir -p lfs-files
+          cp -r static/images static/videos lfs-files/
+      
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
         with:
@@ -29,10 +35,16 @@ jobs:
 
       - name: Build
         run: hugo --gc --minify --cleanDestinationDir
+      
+      # Copy LFS files back to ensure they're in the public directory
+      - name: Ensure LFS files in public
+        run: |
+          cp -r lfs-files/images lfs-files/videos public/
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_branch: gh-pages
+          publish_dir: ./public
           force_orphan: true
