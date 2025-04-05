@@ -31,7 +31,7 @@ Outside the lab, I enjoy badminton, dance, and [photography](https://www.instagr
   - Neural Radiance Fields (NeRFs)
   - 3D Gaussian Splatting
   - Large-scale Scene Reconstruction
-  - Satellite Imagery Analysis
+  - Satellite Imagery
 
 - **3D Generation**
   - Large-scale Scene Synthesis
