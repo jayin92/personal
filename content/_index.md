@@ -18,7 +18,7 @@ Email: [jayinnn.cs10@nycu.edu.tw](mailto:jayinnn.cs10@nycu.edu.tw)
 
 Hi! I'm Jie-Ying Lee, a Computer Science undergraduate at National Yang Ming Chiao Tung University and former exchange student at ETH Zurich. I currently serve as a research assistant at the Computational Photography Lab under [Prof. Yu-Lun Liu](https://yulunalexliu.github.io/).
 
-In Summer 2024, I interned with Google's Pixel Camera Team, where I integrated the Segment Anything Model (SAM) for mobile devices under [Yu-Lin Chang](https://scholar.google.com/citations?user=0O9rukQAAAAJ&hl=en) and Chung-Kai Hsieh. My industry experience also includes positions as an R&D Intern at Microsoft and a Backend Engineer Intern at Appier.
+In Summer 2024, I interned with Google's Pixel Camera Team, where I integrated the Segment Anything Model (SAM) for mobile devices, hosted by [Yu-Lin Chang](https://scholar.google.com/citations?user=0O9rukQAAAAJ&hl=en) and [Chung-Kai Hsieh](https://www.linkedin.com/in/chungkaihsieh). My industry experience also includes positions as an R&D Intern at Microsoft and a Backend Engineer Intern at Appier.
 
 **I'm planning to pursue a Ph.D. in 2026 and am actively seeking research collaborations.**
 
