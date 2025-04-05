@@ -1,3 +1,7 @@
+{{- $authorIds := .Get "authors" | default "" -}}
+{{- $equalContrib := .Get "equal" | default "" -}}
+{{- $authors := .Site.Data.authors.authors -}}
+
 <div class="publication-with-teaser">
   <div class="publication-teaser">
     <div class="teaser-container">
@@ -11,6 +15,64 @@
     </div>
   </div>
   <div class="publication-content">
-    {{ .Inner | markdownify }}
+    {{ if and (.Get "url") (.Get "title") (.Get "venue") (.Get "year") }}
+      <h3><a href="{{ .Get "url" }}" target="_blank" rel="noopener noreferrer">{{ .Get "title" }}</a></h3>
+      
+      {{ if $authorIds }}
+      <p class="authors">
+        {{- $authorIdList := split $authorIds "," -}}
+        {{- $equalContribList := split $equalContrib "," -}}
+        
+        {{- range $index, $authorId := $authorIdList -}}
+          {{- $authorId := trim $authorId " " -}}
+          {{- $isEqual := false -}}
+          {{- range $equalId := $equalContribList -}}
+            {{- if eq (trim $equalId " ") $authorId -}}
+              {{- $isEqual = true -}}
+            {{- end -}}
+          {{- end -}}
+          
+          {{- if gt $index 0 -}},&nbsp;{{- end -}}
+          
+          {{- $author := index (where $authors "id" $authorId) 0 -}}
+          {{- if $author -}}
+            {{- if $author.highlight -}}
+              <strong>
+                {{- if $author.url -}}
+                  <a href="{{ $author.url }}" target="_blank" rel="noopener noreferrer">{{ $author.name }}</a>
+                {{- else -}}
+                  {{ $author.name }}
+                {{- end -}}
+              </strong>
+            {{- else -}}
+              {{- if $author.url -}}
+                <a href="{{ $author.url }}" target="_blank" rel="noopener noreferrer">{{ $author.name }}</a>
+              {{- else -}}
+                {{ $author.name }}
+              {{- end -}}
+            {{- end -}}
+            {{- if $isEqual -}}*{{- end -}}
+          {{- else -}}
+            {{ $authorId }}
+          {{- end -}}
+        {{- end -}}
+        
+        {{- if ne $equalContrib "" -}}
+          {{- $note := .Get "note" | default "(*Equal Contribution)" -}}
+          {{- printf " %s" $note -}}
+        {{- end -}}
+      </p>
+      {{ end }}
+      
+      <p class="venue"><em>{{ .Get "venue" }}{{ with .Get "venue-short" }} <strong>({{ . }})</strong>{{ end }}, {{ .Get "year" }}</em></p>
+      
+      {{ if .Inner }}
+        <div class="publication-abstract">
+          {{ .Inner | markdownify }}
+        </div>
+      {{ end }}
+    {{ else }}
+      {{ .Inner | markdownify }}
+    {{ end }}
   </div>
 </div>

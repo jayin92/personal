@@ -8,11 +8,7 @@ Undergraduate Student
 Department of Computer Science  
 National Yang Ming Chiao Tung University, Taiwan
 
-Exchange Student  
-Department of Computer Science  
-ETH Zürich, Switzerland
-
-Email: [jayinnn.cs10@nycu.edu.tw](mailto:jayinnn.cs10@nycu.edu.tw), [jielee@ethz.ch](mailto:jielee@ethz.ch)
+Email: [jayinnn.cs10@nycu.edu.tw](mailto:jayinnn.cs10@nycu.edu.tw)
 
 [Personal Page](https://jayinnn.dev) | [GitHub](http://github.com/jayin92) | [LinkedIn](https://www.linkedin.com/in/jayinnn/) | [Google Scholar](https://scholar.google.com/citations?view_op=list_works&hl=zh-TW&user=mKB6voEAAAAJ) | [Personal Blog](https://blog.jayinnn.dev/) | [CV](https://raw.githubusercontent.com/jayin92/CV/main/cv.pdf)
 
@@ -20,24 +16,26 @@ Email: [jayinnn.cs10@nycu.edu.tw](mailto:jayinnn.cs10@nycu.edu.tw), [jielee@ethz
 
 ## About Me
 
-Hi! I'm Jie-Ying Lee, a Computer Science undergraduate at National Yang Ming Chiao Tung University and current exchange student at ETH Zurich. I serve as a research assistant at the Comp Photo Lab under [Prof. Yu-Lun Liu](https://yulunalexliu.github.io/).
+Hi! I'm Jie-Ying Lee, a Computer Science undergraduate at National Yang Ming Chiao Tung University and former exchange student at ETH Zurich. I currently serve as a research assistant at the Computational Photography Lab under [Prof. Yu-Lun Liu](https://yulunalexliu.github.io/).
 
-In Summer 2024, I interned at Google's Pixel Camera Team, working on integrating the Segment Anything Model (SAM) for mobile devices under the guidance of [Yu-Lin Chang](https://scholar.google.com/citations?user=0O9rukQAAAAJ&hl=en) and Chung-Kai Hsieh. My previous industry experience includes roles as an R&D Intern at Microsoft and a Backend Engineer Intern at Appier.
+In Summer 2024, I interned with Google's Pixel Camera Team, where I integrated the Segment Anything Model (SAM) for mobile devices under [Yu-Lin Chang](https://scholar.google.com/citations?user=0O9rukQAAAAJ&hl=en) and Chung-Kai Hsieh. My industry experience also includes positions as an R&D Intern at Microsoft and a Backend Engineer Intern at Appier.
 
-**I'm planning to pursue a Ph.D. in 2026 and am eager to explore research collaborations.**
+**I'm planning to pursue a Ph.D. in 2026 and am actively seeking research collaborations.**
 
-Beyond academics, I'm passionate about badminton, dance, and [photography](https://www.instagram.com/photograbear_/).
+Outside the lab, I enjoy badminton, dance, and [photography](https://www.instagram.com/photograbear_/).
+
 
 ## Research Interest
 
-- 3D Reconstruction
-  - NeRFs
-  - 3D Gaussian splatting
-  - Large-scale scenes
-  - Satellite imagery
-- 3D Generation
-  - Large-scale scenes
-  - Object
+- **3D Reconstruction**
+  - Neural Radiance Fields (NeRFs)
+  - 3D Gaussian Splatting
+  - Large-scale Scene Reconstruction
+  - Satellite Imagery Analysis
+
+- **3D Generation**
+  - Large-scale Scene Synthesis
+  - Object Generation and Manipulation
 
 ## News
 
@@ -50,20 +48,42 @@ Beyond academics, I'm passionate about badminton, dance, and [photography](https
 
 ## Publications
 
-{{< publication-with-teaser image="/images/publications/spectromotion-teaser.jpg" video="/videos/publications/spectromotion-teaser.mp4" title="SpectroMotion" >}}
-[**SpectroMotion: Dynamic 3D Reconstruction of Specular Scenes**](https://cdfan0627.github.io/spectromotion/)  
-Cheng-De Fan, Chen-Wei Chang, Yi-Ruei Liu, **Jie-Ying Lee**, Jiun-Long Huang, Yu-Chee Tseng, Yu-Lun Liu  
-*IEEE/CVF Conference on Computer Vision and Pattern Recognition **(CVPR)**, 2025.*
+{{< publication-with-teaser 
+    image="/images/publications/aurafusion360-teaser.jpg" 
+    video="/videos/publications/aurafusion360-teaser.mp4" 
+    title="AuraFusion360: Augmented Unseen Region Alignment for Reference-based 360° Unbounded Scene Inpainting" 
+    url="https://kkennethwu.github.io/aurafusion360/" 
+    authors="chwu,yjchen,yhchen,jylee,bhke,cwtm,ychuang,cylin,mhchen,yylin,ylliu" 
+    equal="chwu,yjchen" 
+    note="(*Equal Contribution)" 
+    venue="IEEE/CVF Conference on Computer Vision and Pattern Recognition" 
+    venue-short="CVPR" 
+    year="2025" 
+>}}
 {{< /publication-with-teaser >}}
 
-{{< publication-with-teaser image="/images/publications/aurafusion360-teaser.jpg" video="/videos/publications/aurafusion360-teaser.mp4" title="AuraFusion360" >}}
-[**AuraFusion360: Augmented Unseen Region Alignment for Reference-based 360° Unbounded Scene Inpainting**](https://kkennethwu.github.io/aurafusion360/)  
-Chung-Ho Wu, Yang-Jung Chen, Ying-Huan Chen, **Jie-Ying Lee**, Bo-Hsu Ke, Chun-Wei Tuan Mu, Yi-Chuan Huang, Chin-Yang Lin, Min-Hung Chen, Yen-Yu Lin, Yu-Lun Liu  
-*IEEE/CVF Conference on Computer Vision and Pattern Recognition **(CVPR)**, 2025.*
+{{< publication-with-teaser 
+    image="/images/publications/spectromotion-teaser.jpg" 
+    video="/videos/publications/spectromotion-teaser.mp4" 
+    title="SpectroMotion: Dynamic 3D Reconstruction of Specular Scenes" 
+    url="https://cdfan0627.github.io/spectromotion/" 
+    authors="cdfan,cwchang,yrliu,jylee,jlhuang,yctseng,ylliu" 
+    venue="IEEE/CVF Conference on Computer Vision and Pattern Recognition" 
+    venue-short="CVPR" 
+    year="2025" 
+>}}
 {{< /publication-with-teaser >}}
 
-{{< publication-with-teaser image="/images/publications/boostmvsnerfs-teaser.jpg" video="/videos/publications/boostmvsnerfs-teaser.mp4" title="BoostMVSNeRFs" >}}
-[**BoostMVSNeRFs: Boosting MVS-based NeRFs to Generalizable View Synthesis in Large-scale Scenes**](https://su-terry.github.io/BoostMVSNeRFs/)  
-Chih-Hai Su*, Chih-Yao Hu*, Shr-Ruei Tsai*, **Jie-Ying Lee***, Chin-Yang Lin, Yu-Lun Liu (*Equal Contribution)  
-*ACM Special Interest Group on Computer Graphics and Interactive Techniques **(SIGGRAPH)**, 2024.*
+{{< publication-with-teaser 
+    image="/images/publications/boostmvsnerfs-teaser.jpg" 
+    video="/videos/publications/boostmvsnerfs-teaser.mp4" 
+    title="BoostMVSNeRFs: Boosting MVS-based NeRFs to Generalizable View Synthesis in Large-scale Scenes" 
+    url="https://su-terry.github.io/BoostMVSNeRFs/" 
+    authors="chsu,cyhu,srtsai,jylee,cylin,ylliu" 
+    equal="chsu,cyhu,srtsai,jylee" 
+    note="(*Equal Contribution)" 
+    venue="ACM Special Interest Group on Computer Graphics and Interactive Techniques" 
+    venue-short="SIGGRAPH" 
+    year="2024" 
+>}}
 {{< /publication-with-teaser >}}
