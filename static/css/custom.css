@@ -1,0 +1,85 @@
+/* Custom styles for publications with teaser images */
+.publication-with-teaser {
+  display: flex;
+  margin-bottom: 2em;
+  align-items: flex-start;
+}
+
+.publication-teaser {
+  flex: 0 0 200px;
+  margin-right: 20px;
+}
+
+.teaser-container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  border: 1px solid #eee;
+}
+
+.teaser-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: opacity 0.3s ease;
+}
+
+.teaser-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+/* Show video on hover */
+.teaser-container:hover .teaser-image {
+  opacity: 0;
+}
+
+.teaser-container:hover .teaser-video {
+  opacity: 1;
+}
+
+.publication-content {
+  flex: 1;
+}
+
+/* Publication placeholder styles */
+.publication-placeholder {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  border-radius: 4px;
+}
+
+.publication-placeholder h4 {
+  margin: 0 0 10px 0;
+  font-size: 1.2em;
+}
+
+.publication-placeholder p {
+  margin: 0;
+  font-size: 0.9em;
+  opacity: 0.9;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .publication-with-teaser {
+    flex-direction: column;
+  }
+  
+  .publication-teaser {
+    flex: 0 0 100%;
+    margin-right: 0;
+    margin-bottom: 1em;
+  }
+}
