@@ -31,24 +31,39 @@ Beyond academics, I'm passionate about badminton, dance, and [photography](https
 ## Research Interest
 
 - 3D Reconstruction
-    - NeRFs
-    - 3D Gaussian Splatting
-    - Large-scale scenes
-    - Satellite Imagery
+  - NeRFs
+  - 3D Gaussian splatting
+  - Large-scale scenes
+  - Satellite imagery
 - 3D Generation
-  - Unbounded Scene
+  - Large-scale scenes
   - Object
 
 ## News
 
+- Mar. 2025: Two papers accepted to CVPR 2025: "AuraFusion360" and "SpectroMotion"!
 - Sep. 2024: Began exchange studies in the Department of Computer Science (D-INFK) at ETH Zurich
 - Aug. 2024: Co-authored "BoostMVSNeRFs" paper accepted to the ECCV 2024 Wild3D Workshop as a poster presentation
-- Jul. 2024: My work, BEVGaussian, won the [陽明交大資工系專題競賽佳作 (3rd place of the NYCU CS Undergraduate Research Competition)](https://www.cs.nycu.edu.tw/storage/materials/xeXTWKdsG4IkteKZGx3lxO6WdeZv4Qi0mgaomFJr.pdf)!
-- Jun. 2024: My work, Unbounded Scene Generation, are awarded the [國科會大專學生研究計畫 (NSTC Research Grant for University Students)](https://www.nstc.gov.tw/folksonomy/list/2af9ad9a-1f47-450d-b5a1-2cb43de8290c?l=ch)!
+- Jul. 2024: My work, BEVGaussian, won the [陽明交大資工系專題競賽佳作 (3rd place of the NYCU CS Undergraduate Research Competition)](https://www.cs.nycu.edu.tw/storage/materials/xeXTWKdsG4IkteKZGx3lxO6WdeZv4Qi0mgaomFJr.pdf)!
+- Jun. 2024: My work, Unbounded Scene Generation, are awarded the [國科會大專學生研究計畫 (NSTC Research Grant for University Students)](https://www.nstc.gov.tw/folksonomy/list/2af9ad9a-1f47-450d-b5a1-2cb43de8290c?l=ch)!
 - May 2024: Co-authored "BoostMVSNeRFs" paper accepted to SIGGRAPH 2024!  
 
 ## Publications
 
+{{< publication-with-teaser image="/images/publications/spectromotion-teaser.jpg" video="/videos/publications/spectromotion-teaser.mp4" title="SpectroMotion" >}}
+[**SpectroMotion: Dynamic 3D Reconstruction of Specular Scenes**](https://cdfan0627.github.io/spectromotion/)  
+Cheng-De Fan, Chen-Wei Chang, Yi-Ruei Liu, **Jie-Ying Lee**, Jiun-Long Huang, Yu-Chee Tseng, Yu-Lun Liu  
+*IEEE/CVF Conference on Computer Vision and Pattern Recognition **(CVPR)**, 2025.*
+{{< /publication-with-teaser >}}
+
+{{< publication-with-teaser image="/images/publications/aurafusion360-teaser.jpg" video="/videos/publications/aurafusion360-teaser.mp4" title="AuraFusion360" >}}
+[**AuraFusion360: Augmented Unseen Region Alignment for Reference-based 360° Unbounded Scene Inpainting**](https://kkennethwu.github.io/aurafusion360/)  
+Chung-Ho Wu, Yang-Jung Chen, Ying-Huan Chen, **Jie-Ying Lee**, Bo-Hsu Ke, Chun-Wei Tuan Mu, Yi-Chuan Huang, Chin-Yang Lin, Min-Hung Chen, Yen-Yu Lin, Yu-Lun Liu  
+*IEEE/CVF Conference on Computer Vision and Pattern Recognition **(CVPR)**, 2025.*
+{{< /publication-with-teaser >}}
+
+{{< publication-with-teaser image="/images/publications/boostmvsnerfs-teaser.jpg" video="/videos/publications/boostmvsnerfs-teaser.mp4" title="BoostMVSNeRFs" >}}
 [**BoostMVSNeRFs: Boosting MVS-based NeRFs to Generalizable View Synthesis in Large-scale Scenes**](https://su-terry.github.io/BoostMVSNeRFs/)  
 Chih-Hai Su*, Chih-Yao Hu*, Shr-Ruei Tsai*, **Jie-Ying Lee***, Chin-Yang Lin, Yu-Lun Liu (*Equal Contribution)  
-*ACM Special Interest Group on Computer Graphics and Interactive Techniques **(SIGGRAPH)**, 2024.*
+*ACM Special Interest Group on Computer Graphics and Interactive Techniques **(SIGGRAPH)**, 2024.*
+{{< /publication-with-teaser >}}
