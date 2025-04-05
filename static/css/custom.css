@@ -1,6 +1,6 @@
 /* Global typography improvements */
 body {
-  line-height: 1.6;
+  line-height: 1.4;
 }
 
 /* Profile header styling */
@@ -153,14 +153,15 @@ section {
 /* Improved typography for publication content */
 .publication-content h3 {
   margin-top: 0;
-  margin-bottom: 0.3em;
+  margin-bottom: 0;
   font-size: 1.3em;
   line-height: 1;
 }
 
 .publication-content .authors {
-  margin: 0.2em 0;
-  line-height: 1.4;
+  margin: 0;
+  padding-top: 0;
+  line-height: 1.2;
 }
 
 .publication-content .venue {

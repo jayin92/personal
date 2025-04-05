@@ -60,6 +60,7 @@ Outside the lab, I enjoy badminton, dance, and [photography](https://www.instagr
     venue-short="CVPR" 
     year="2025" 
 >}}
+The approach introduces (1) depth-aware unseen mask generation for accurate occlusion identification, (2) Adaptive Guided Depth Diffusion, a zero-shot method for accurate initial point placement without requiring additional training, and (3) SDEdit-based detail enhancement for multi-view coherence.
 {{< /publication-with-teaser >}}
 
 {{< publication-with-teaser 
@@ -72,6 +73,7 @@ Outside the lab, I enjoy badminton, dance, and [photography](https://www.instagr
     venue-short="CVPR" 
     year="2025" 
 >}}
+SpectroMotion is presented, a novel approach that combines 3D Gaussian Splatting with physically-based rendering (PBR) and deformation fields to reconstruct dynamic specular scenes and is the only existing 3DGS method capable of synthesizing photorealistic real-world dynamic specular scenes.
 {{< /publication-with-teaser >}}
 
 {{< publication-with-teaser 
@@ -86,4 +88,5 @@ Outside the lab, I enjoy badminton, dance, and [photography](https://www.instagr
     venue-short="SIGGRAPH" 
     year="2024" 
 >}}
+This paper presents a novel approach called BoostMVSNeRFs to enhance the rendering quality of MVS-based NeRFs in large-scale scenes, and identifies limitations in MVS-based NeRF methods, such as restricted viewport coverage and artifacts due to limited input views.
 {{< /publication-with-teaser >}}
