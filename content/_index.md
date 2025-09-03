@@ -18,7 +18,9 @@ Email: [jayinnn.cs14@nycu.edu.tw](mailto:jayinnn.cs14@nycu.edu.tw)
 
 Hi! I'm Jie-Ying (Jay) Lee. I am a Ph.D. student in Computer Science at National Yang Ming Chiao Tung University, advised by [Prof. Yu-Lun Liu](https://yulunalexliu.github.io/). I am also a Software Engineer on Google's Pixel Camera Team, where I develop camera machine learning algorithms.
 
-Previously, I was an exchange student at ETH Zurich. My industry experience also includes positions as an SWE Intern at Google, an R&D Intern at Microsoft and a Backend Engineer Intern at Appier.
+I received my B.S. in Computer Science from National Yang Ming Chiao Tung University. During my undergraduate studies, I was an exchange student at ETH Zurich.
+
+In Summer 2024, I interned with Google's Pixel Camera Team, where I integrated the Segment Anything Model (SAM) for mobile devices, hosted by [Yu-Lin Chang](https://scholar.google.com/citations?user=0O9rukQAAAAJ&hl=en) and [Chung-Kai Hsieh](https://www.linkedin.com/in/chungkaihsieh). My industry experience also includes positions as an R&D Intern at Microsoft and a Backend Engineer Intern at Appier.
 
 I am actively seeking research collaborations.
 
@@ -31,14 +33,18 @@ Outside of work and research, I enjoy badminton, dance, and [photography](https:
     -   3D Gaussian Splatting
     -   Large-scale Scene Reconstruction
     -   Satellite Imagery
-
 -   **3D Generation**
     -   Urban Scene Generation
     -   Object Generation and Manipulation
+-   **Image Segmentation**
+    -   Segment Anything Model
+
 ## News
 
 -   Sep. 2025: Joined Google as a Software Engineer on the Pixel Camera Team!
 -   Sep. 2025: Started my Ph.D. journey at NYCU with [Prof. Yu-Lun Liu](https://yulunalexliu.github.io/)!
+-   Jul. 2025: One paper accepted to CoRL 2025: "See, Point, Fly"!
+-   Jun. 2025: One paper accepted to ICCV 2025: "LightsOut"!
 -   Mar. 2025: Two papers accepted to CVPR 2025: "AuraFusion360" and "SpectroMotion"!
 -   Sep. 2024: Began exchange studies in the Department of Computer Science (D-INFK) at ETH Zurich
 -   Aug. 2024: Co-authored "BoostMVSNeRFs" paper accepted to the ECCV 2024 Wild3D Workshop as a poster presentation
