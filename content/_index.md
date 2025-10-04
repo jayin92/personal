@@ -55,6 +55,21 @@ Outside of work and research, I enjoy badminton, dance, and [photography](https:
 ## Publications
 
 {{< publication-with-teaser
+    image="/images/publications/spf-teaser.jpg"
+    video="/videos/publications/spf-teaser.mp4"
+    title="See, Point, Fly: A Learning-Free VLM Framework for Universal Unmanned Aerial Navigation"
+    url="[https://spf-web.pages.dev/](https://spf-web.pages.dev/)"
+    authors="cyhu,yslin,yunalee,chsu,jylee,srtsai,cylin,kwchen,twke,ylliu"
+    equal="cyhu,yslin"
+    note="(*Equal Contribution)"
+    venue="The Conference on Robot Learning"
+    venue-short="CoRL"
+    year="2025"
+>}}
+This work presents See, Point, Fly (SPF), a training-free aerial vision-and-language navigation (AVLN) framework built atop vision-language models (VLMs), to consider action prediction for AVLN as a 2D spatial grounding task.
+{{< /publication-with-teaser >}}
+
+{{< publication-with-teaser
     image="/images/publications/aurafusion360-teaser.jpg"
     video="/videos/publications/aurafusion360-teaser.mp4"
     title="AuraFusion360: Augmented Unseen Region Alignment for Reference-based 360° Unbounded Scene Inpainting"
