@@ -2,7 +2,7 @@
 title = "Jie-Ying Lee 李杰穎"
 +++
 
-{{< figure class="avatar" src="/avatar.jpg" alt="avatar">}}
+{{< figure class="avatar" src="/avatar.png" alt="avatar">}}
 
 Ph.D. Student  
 Department of Computer Science  
