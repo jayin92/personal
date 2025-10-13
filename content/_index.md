@@ -12,7 +12,7 @@ Software Engineer, Pixel Camera Team, Google
 
 Email: [jayinnn.cs14@nycu.edu.tw](mailto:jayinnn.cs14@nycu.edu.tw)
 
-[Personal Page](https://jayinnn.dev) / [GitHub](http://github.com/jayin92) / [LinkedIn](https://www.linkedin.com/in/jayinnn/) / [Google Scholar](https://scholar.google.com/citations?view_op=list_works&hl=zh-TW&user=mKB6voEAAAAJ) / [Personal Blog](https://blog.jayinnn.dev/) / [CV](https://raw.githubusercontent.com/jayin92/CV/main/cv.pdf)
+[CV](https://raw.githubusercontent.com/jayin92/CV/main/cv.pdf) / [Google Scholar](https://scholar.google.com/citations?view_op=list_works&hl=zh-TW&user=mKB6voEAAAAJ) / [LinkedIn](https://www.linkedin.com/in/jayinnn/) / [GitHub](http://github.com/jayin92) / [Personal Blog](https://blog.jayinnn.dev/)
 
 ## About Me
 
