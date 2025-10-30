@@ -54,6 +54,22 @@ Outside of work and research, I enjoy badminton, dance, and [photography](https:
 
 ## Publications
 
+
+{{< publication-with-teaser
+    image="/images/publications/skyfallgs-teaser.png"
+    video="/videos/publications/skyfallgs-teaser.mp4"
+    title="Skyfall-GS: Synthesizing Immersive 3D Urban Scenes from Satellite Imagery"
+    url="https://skyfall-gs.jayinnn.dev/"
+    authors="jylee,yrliu,srtsai,wcchang,chwu,jwchan,zjzhao,hubertlin,ylliu"
+    equal="cyhu,yslin"
+    note="(*Equal Contribution)"
+    venue="arXiv"
+    venue-short=""
+    year="2025"
+>}}
+Creating large-scale, photorealistic 3D urban scenes traditionally requires expensive 3D scanning and manual annotation. We present Skyfall-GS, a novel framework that synthesizes city-block scale environments by combining satellite imagery with diffusion models, enabling real-time exploration without costly 3D annotations.
+{{< /publication-with-teaser >}}
+
 {{< publication-with-teaser
     image="/images/publications/spf-teaser.jpg"
     video="/videos/publications/spf-teaser.mp4"
