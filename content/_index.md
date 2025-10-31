@@ -16,7 +16,7 @@ Email: [jayinnn.cs14@nycu.edu.tw](mailto:jayinnn.cs14@nycu.edu.tw)
 
 ## About Me
 
-Hi! I'm Jie-Ying (Jay) Lee. I am a Ph.D. student in Computer Science at National Yang Ming Chiao Tung University, advised by [Prof. Yu-Lun Liu](https://yulunalexliu.github.io/). I am also a Software Engineer on Google's Pixel Camera Team, where I develop camera machine learning algorithms.
+Hi! I'm Jie-Ying (Jay) Lee. I am a Ph.D. student in Computer Science at National Yang Ming Chiao Tung University, advised by [Prof. Yu-Lun Liu](https://yulunalexliu.github.io/). I am also a Software Engineer on Google's Pixel Camera Team, where I develop on-device algorithms for camera.
 
 I received my B.S. in Computer Science from National Yang Ming Chiao Tung University. During my undergraduate studies, I was an exchange student at ETH Zurich.
 
