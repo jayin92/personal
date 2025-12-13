@@ -63,6 +63,10 @@ Outside of work and research, I enjoy badminton, dance, and [photography](https:
     venue="arXiv"
     venue-short=""
     year="2025"
+    project="https://skyfall-gs.jayinnn.dev/"
+    arxiv="https://arxiv.org/abs/2510.15869"
+    code="https://github.com/jayin92/skyfall-gs"
+    pdf="https://arxiv.org/pdf/2510.15869"
 >}}
 Creating large-scale, photorealistic 3D urban scenes traditionally requires expensive 3D scanning and manual annotation. We present Skyfall-GS, a novel framework that synthesizes city-block scale environments by combining satellite imagery with diffusion models, enabling real-time exploration without costly 3D annotations.
 {{< /publication-with-teaser >}}

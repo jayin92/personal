@@ -72,6 +72,38 @@
       
       <p class="venue"><em>{{ .Get "venue" }}{{ with .Get "venue-short" }} <strong>({{ . }})</strong>{{ end }}, {{ .Get "year" }}</em></p>
       
+      {{/* Links using named parameters - more maintainable Hugo syntax */}}
+      {{- $hasLinks := or (.Get "project") (.Get "arxiv") (.Get "code") (.Get "pdf") (.Get "video-link") (.Get "demo") -}}
+      {{ if $hasLinks }}
+      <p class="publication-links">
+        {{- $first := true -}}
+        {{- with .Get "project" -}}
+          {{- if not $first }} / {{ end -}}<a href="{{ . }}" target="_blank" rel="noopener noreferrer">project page</a>
+          {{- $first = false -}}
+        {{- end -}}
+        {{- with .Get "arxiv" -}}
+          {{- if not $first }} / {{ end -}}<a href="{{ . }}" target="_blank" rel="noopener noreferrer">arXiv</a>
+          {{- $first = false -}}
+        {{- end -}}
+        {{- with .Get "pdf" -}}
+          {{- if not $first }} / {{ end -}}<a href="{{ . }}" target="_blank" rel="noopener noreferrer">pdf</a>
+          {{- $first = false -}}
+        {{- end -}}
+        {{- with .Get "code" -}}
+          {{- if not $first }} / {{ end -}}<a href="{{ . }}" target="_blank" rel="noopener noreferrer">code</a>
+          {{- $first = false -}}
+        {{- end -}}
+        {{- with .Get "video-link" -}}
+          {{- if not $first }} / {{ end -}}<a href="{{ . }}" target="_blank" rel="noopener noreferrer">video</a>
+          {{- $first = false -}}
+        {{- end -}}
+        {{- with .Get "demo" -}}
+          {{- if not $first }} / {{ end -}}<a href="{{ . }}" target="_blank" rel="noopener noreferrer">demo</a>
+          {{- $first = false -}}
+        {{- end -}}
+      </p>
+      {{ end }}
+
       {{ if .Inner }}
         <div class="publication-abstract">
           {{ .Inner | markdownify }}
