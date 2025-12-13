@@ -292,7 +292,7 @@ section {
   .publication-teaser {
     flex: 0 0 100%;
     margin-right: 0;
-    margin-bottom: 1.5em;
+    margin-bottom: 0em;
   }
   
   h2 {
