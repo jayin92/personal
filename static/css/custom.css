@@ -139,12 +139,35 @@ section {
 }
 
 /* Show video/hover-image on hover */
-.teaser-container:hover .teaser-image {
+.teaser-container:hover .teaser-image,
+.teaser-container.active .teaser-image {
   opacity: 0;
 }
 
-.teaser-container:hover .teaser-video {
+.teaser-container:hover .teaser-video,
+.teaser-container.active .teaser-video {
   opacity: 1;
+}
+
+/* Hover hint badge */
+.teaser-hint {
+  position: absolute;
+  bottom: 8px;
+  right: 8px;
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+  font-size: 0.7em;
+  padding: 4px 8px;
+  border-radius: 4px;
+  z-index: 10;
+  pointer-events: none;
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+
+.teaser-container:hover .teaser-hint,
+.teaser-container.active .teaser-hint {
+  opacity: 0;
 }
 
 /* Hover image specific rules - needs high specificity to override theme's #content img */
@@ -162,7 +185,9 @@ section {
 }
 
 #content .teaser-container:hover .teaser-hover-image,
-#content .teaser-container:hover .teaser-video {
+#content .teaser-container:hover .teaser-video,
+#content .teaser-container.active .teaser-hover-image,
+#content .teaser-container.active .teaser-video {
   opacity: 1;
 }
 

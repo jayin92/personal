@@ -8,14 +8,67 @@
       <img src="{{ .Get "image" }}" alt="{{ .Get "title" }} teaser image" class="teaser-image">
       {{- $hoverMedia := .Get "video" | default (.Get "hoverImage") -}}
       {{ if $hoverMedia }}
+        <span class="teaser-hint">▶ Hover / Tap</span>
         {{- $isImage := or (strings.HasSuffix $hoverMedia ".jpg") (strings.HasSuffix $hoverMedia ".jpeg") (strings.HasSuffix $hoverMedia ".png") (strings.HasSuffix $hoverMedia ".gif") (strings.HasSuffix $hoverMedia ".webp") -}}
         {{ if $isImage }}
         <img src="{{ $hoverMedia }}" alt="{{ .Get "title" }} hover image" class="teaser-hover-image teaser-video">
+        <script>
+          (function() {
+            const container = document.currentScript.parentElement;
+            container.addEventListener('click', function() {
+              container.classList.toggle('active');
+            });
+          })();
+        </script>
         {{ else }}
         <video class="teaser-video" muted loop playsinline>
           <source src="{{ $hoverMedia }}" type="video/mp4">
           Your browser does not support the video tag.
         </video>
+        <script>
+          (function() {
+            const container = document.currentScript.parentElement;
+            const video = container.querySelector('video.teaser-video');
+            if (video) {
+              let playPromise;
+              let isPlaying = false;
+              const isTouchDevice = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
+              
+              function playVideo() {
+                isPlaying = true;
+                container.classList.add('active');
+                playPromise = video.play();
+              }
+              
+              function stopVideo() {
+                isPlaying = false;
+                container.classList.remove('active');
+                if (playPromise !== undefined) {
+                  playPromise.then(function() {
+                    video.pause();
+                    video.currentTime = 0;
+                  }).catch(function() {});
+                }
+              }
+              
+              // Desktop: hover to play
+              if (!isTouchDevice) {
+                container.addEventListener('mouseenter', playVideo);
+                container.addEventListener('mouseleave', stopVideo);
+              }
+              
+              // Mobile: tap to toggle
+              container.addEventListener('touchend', function(e) {
+                e.preventDefault();
+                if (isPlaying) {
+                  stopVideo();
+                } else {
+                  playVideo();
+                }
+              });
+            }
+          })();
+        </script>
         {{ end }}
       {{ end }}
     </div>
