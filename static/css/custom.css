@@ -178,25 +178,31 @@ section {
 }
 
 /* Improved typography for publication content */
-#content .publication-content h3,
-.publication-content h3 {
-  margin-top: 0;
-  margin-bottom: 0.2em;
-  font-size: 1.15em;
-  line-height: 1.3;
+.publication-content .publication-meta {
+  line-height: 1.5;
+}
+
+.publication-content .publication-title {
+  font-weight: bold;
+  font-size: 1em;
+  text-decoration: none;
+}
+
+.publication-content .publication-title:hover {
+  text-decoration: underline;
 }
 
 .publication-content .authors {
-  margin: 0;
-  padding-top: 0;
-  line-height: 1.3;
-  font-size: 0.95em;
+  font-size: 0.9em;
   color: #444;
 }
 
+.publication-content .authors a,
+.publication-content .authors strong {
+  font-size: inherit;
+}
+
 .publication-content .venue {
-  line-height: 1.3;
-  margin: 0.1em 0 0.3em;
   font-size: 0.9em;
 }
 
@@ -208,9 +214,12 @@ section {
 }
 
 .publication-content .publication-links {
-  margin: 0.3em 0 0;
   font-size: 0.9em;
-  line-height: 1.4;
+}
+
+.publication-content .publication-links a,
+.publication-content .publication-links strong {
+  font-size: inherit;
 }
 
 .publication-content .publication-links a {

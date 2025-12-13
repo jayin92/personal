@@ -67,6 +67,7 @@ Outside of work and research, I enjoy badminton, dance, and [photography](https:
     arxiv="https://arxiv.org/abs/2510.15869"
     code="https://github.com/jayin92/skyfall-gs"
     pdf="https://arxiv.org/pdf/2510.15869"
+    video="https://youtu.be/zj2-aGSe6ao"
 >}}
 Creating large-scale, photorealistic 3D urban scenes traditionally requires expensive 3D scanning and manual annotation. We present Skyfall-GS, a novel framework that synthesizes city-block scale environments by combining satellite imagery with diffusion models, enabling real-time exploration without costly 3D annotations.
 {{< /publication-with-teaser >}}
@@ -77,9 +78,13 @@ Creating large-scale, photorealistic 3D urban scenes traditionally requires expe
     title="LightsOut: Diffusion-based Outpainting for Enhanced Lens Flare Removal"
     url="https://ray-1026.github.io/lightsout/"
     authors="srtsai,wcchang,jylee,chsu,ylliu"
-    venue="International Conference on Computer Vision"
-    venue-short="ICCV"
+    venue="ICCV"
     year="2025"
+    project="https://ray-1026.github.io/lightsout/"
+    arxiv="https://arxiv.org/abs/2510.15868"
+    code="https://github.com/Ray-1026/LightsOut-official"
+    video-link="https://youtu.be/VNzJ9Z_dJNI"
+    demo="https://huggingface.co/spaces/RayTsai-030/LightsOut-demo"
 >}}
 LightsOut, a diffusion-based outpainting framework tailored to enhance SIFR by reconstructing off-frame light sources by leveraging a multitask regression module and LoRA fine-tuned diffusion model to ensure realistic and physically consistent outpainting results.
 {{< /publication-with-teaser >}}
@@ -92,9 +97,12 @@ LightsOut, a diffusion-based outpainting framework tailored to enhance SIFR by r
     authors="cyhu,yslin,yunalee,chsu,jylee,srtsai,cylin,kwchen,twke,ylliu"
     equal="cyhu,yslin"
     note="(*Equal Contribution)"
-    venue="The Conference on Robot Learning"
-    venue-short="CoRL"
+    venue="CoRL"
     year="2025"
+    project="https://spf-web.pages.dev/"
+    arxiv="https://arxiv.org/abs/2509.22653"
+    code="https://github.com/Hu-chih-yao/see-point-fly"
+    video-link="https://youtu.be/EQPBkNhAuyU"
 >}}
 This work presents See, Point, Fly (SPF), a training-free aerial vision-and-language navigation (AVLN) framework built atop vision-language models (VLMs), to consider action prediction for AVLN as a 2D spatial grounding task.
 {{< /publication-with-teaser >}}
@@ -107,9 +115,12 @@ This work presents See, Point, Fly (SPF), a training-free aerial vision-and-lang
     authors="chwu,yjchen,yhchen,jylee,bhke,cwtm,ychuang,cylin,mhchen,yylin,ylliu"
     equal="chwu,yjchen"
     note="(*Equal Contribution)"
-    venue="IEEE/CVF Conference on Computer Vision and Pattern Recognition"
-    venue-short="CVPR"
+    venue="CVPR"
     year="2025"
+    project="https://kkennethwu.github.io/aurafusion360/"
+    arxiv="https://arxiv.org/abs/2502.05176"
+    code="https://github.com/kkennethwu/AuraFusion360_official.git"
+    video-link="https://www.youtube.com/watch?v=V1_EMXtYhTE"
 >}}
 The approach introduces (1) depth-aware unseen mask generation for accurate occlusion identification, (2) Adaptive Guided Depth Diffusion, a zero-shot method for accurate initial point placement without requiring additional training, and (3) SDEdit-based detail enhancement for multi-view coherence.
 {{< /publication-with-teaser >}}
@@ -120,9 +131,12 @@ The approach introduces (1) depth-aware unseen mask generation for accurate occl
     title="SpectroMotion: Dynamic 3D Reconstruction of Specular Scenes"
     url="https://cdfan0627.github.io/spectromotion/"
     authors="cdfan,cwchang,yrliu,jylee,jlhuang,yctseng,ylliu"
-    venue="IEEE/CVF Conference on Computer Vision and Pattern Recognition"
-    venue-short="CVPR"
+    venue="CVPR"
     year="2025"
+    project="https://cdfan0627.github.io/spectromotion/"
+    arxiv="https://arxiv.org/abs/2410.17249"
+    code="https://github.com/cdfan0627/SpectroMotion"
+    video-link="https://www.youtube.com/watch?v=yqKLUDIdN9g"
 >}}
 SpectroMotion is presented, a novel approach that combines 3D Gaussian Splatting with physically-based rendering (PBR) and deformation fields to reconstruct dynamic specular scenes and is the only existing 3DGS method capable of synthesizing photorealistic real-world dynamic specular scenes.
 {{< /publication-with-teaser >}}
@@ -135,9 +149,12 @@ SpectroMotion is presented, a novel approach that combines 3D Gaussian Splatting
     authors="chsu,cyhu,srtsai,jylee,cylin,ylliu"
     equal="chsu,cyhu,srtsai,jylee"
     note="(*Equal Contribution)"
-    venue="ACM Special Interest Group on Computer Graphics and Interactive Techniques"
-    venue-short="SIGGRAPH"
+    venue="SIGGRAPH"
     year="2024"
+    project="https://su-terry.github.io/BoostMVSNeRFs/"
+    arxiv="https://arxiv.org/abs/2407.15848"
+    code="https://github.com/Su-Terry/BoostMVSNeRFs"
+    video-link="https://www.youtube.com/watch?v=tX4EkFgm0ng"
 >}}
 This paper presents a novel approach called BoostMVSNeRFs to enhance the rendering quality of MVS-based NeRFs in large-scale scenes, and identifies limitations in MVS-based NeRF methods, such as restricted viewport coverage and artifacts due to limited input views.
 {{< /publication-with-teaser >}}

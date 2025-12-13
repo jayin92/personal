@@ -22,87 +22,85 @@
   </div>
   <div class="publication-content">
     {{ if and (.Get "url") (.Get "title") (.Get "venue") (.Get "year") }}
-      <h3><a href="{{ .Get "url" }}" target="_blank" rel="noopener noreferrer">{{ .Get "title" }}</a></h3>
-      
-      {{ if $authorIds }}
-      <p class="authors">
-        {{- $authorIdList := split $authorIds "," -}}
-        {{- $equalContribList := split $equalContrib "," -}}
-        
-        {{- range $index, $authorId := $authorIdList -}}
-          {{- $authorId := trim $authorId " " -}}
-          {{- $isEqual := false -}}
-          {{- range $equalId := $equalContribList -}}
-            {{- if eq (trim $equalId " ") $authorId -}}
-              {{- $isEqual = true -}}
+      <div class="publication-meta">
+        <a href="{{ .Get "url" }}" target="_blank" rel="noopener noreferrer" class="publication-title">{{ .Get "title" }}</a>
+        <br>
+        {{ if $authorIds }}
+        <span class="authors">
+          {{- $authorIdList := split $authorIds "," -}}
+          {{- $equalContribList := split $equalContrib "," -}}
+          {{- range $index, $authorId := $authorIdList -}}
+            {{- $authorId := trim $authorId " " -}}
+            {{- $isEqual := false -}}
+            {{- range $equalId := $equalContribList -}}
+              {{- if eq (trim $equalId " ") $authorId -}}
+                {{- $isEqual = true -}}
+              {{- end -}}
             {{- end -}}
-          {{- end -}}
-          
-          {{- if gt $index 0 -}},&nbsp;{{- end -}}
-          
-          {{- $author := index (where $authors "id" $authorId) 0 -}}
-          {{- if $author -}}
-            {{- if $author.highlight -}}
-              <strong>
+            {{- if gt $index 0 -}},&nbsp;{{- end -}}
+            {{- $author := index (where $authors "id" $authorId) 0 -}}
+            {{- if $author -}}
+              {{- if $author.highlight -}}
+                <strong>
+                  {{- if $author.url -}}
+                    <a href="{{ $author.url }}" target="_blank" rel="noopener noreferrer">{{ $author.name }}</a>
+                  {{- else -}}
+                    {{ $author.name }}
+                  {{- end -}}
+                </strong>
+              {{- else -}}
                 {{- if $author.url -}}
                   <a href="{{ $author.url }}" target="_blank" rel="noopener noreferrer">{{ $author.name }}</a>
                 {{- else -}}
                   {{ $author.name }}
                 {{- end -}}
-              </strong>
-            {{- else -}}
-              {{- if $author.url -}}
-                <a href="{{ $author.url }}" target="_blank" rel="noopener noreferrer">{{ $author.name }}</a>
-              {{- else -}}
-                {{ $author.name }}
               {{- end -}}
+              {{- if $isEqual -}}*{{- end -}}
+            {{- else -}}
+              {{ $authorId }}
             {{- end -}}
-            {{- if $isEqual -}}*{{- end -}}
-          {{- else -}}
-            {{ $authorId }}
           {{- end -}}
-        {{- end -}}
-        
-        {{- if ne $equalContrib "" -}}
-          {{- $note := .Get "note" | default "(*Equal Contribution)" -}}
-          {{- printf " %s" $note -}}
-        {{- end -}}
-      </p>
-      {{ end }}
-      
-      <p class="venue"><em>{{ .Get "venue" }}{{ with .Get "venue-short" }} <strong>({{ . }})</strong>{{ end }}, {{ .Get "year" }}</em></p>
-      
-      {{/* Links using named parameters - more maintainable Hugo syntax */}}
-      {{- $hasLinks := or (.Get "project") (.Get "arxiv") (.Get "code") (.Get "pdf") (.Get "video-link") (.Get "demo") -}}
-      {{ if $hasLinks }}
-      <p class="publication-links">
-        {{- $first := true -}}
-        {{- with .Get "project" -}}
-          {{- if not $first }} / {{ end -}}<a href="{{ . }}" target="_blank" rel="noopener noreferrer">project page</a>
-          {{- $first = false -}}
-        {{- end -}}
-        {{- with .Get "arxiv" -}}
-          {{- if not $first }} / {{ end -}}<a href="{{ . }}" target="_blank" rel="noopener noreferrer">arXiv</a>
-          {{- $first = false -}}
-        {{- end -}}
-        {{- with .Get "pdf" -}}
-          {{- if not $first }} / {{ end -}}<a href="{{ . }}" target="_blank" rel="noopener noreferrer">pdf</a>
-          {{- $first = false -}}
-        {{- end -}}
-        {{- with .Get "code" -}}
-          {{- if not $first }} / {{ end -}}<a href="{{ . }}" target="_blank" rel="noopener noreferrer">code</a>
-          {{- $first = false -}}
-        {{- end -}}
-        {{- with .Get "video-link" -}}
-          {{- if not $first }} / {{ end -}}<a href="{{ . }}" target="_blank" rel="noopener noreferrer">video</a>
-          {{- $first = false -}}
-        {{- end -}}
-        {{- with .Get "demo" -}}
-          {{- if not $first }} / {{ end -}}<a href="{{ . }}" target="_blank" rel="noopener noreferrer">demo</a>
-          {{- $first = false -}}
-        {{- end -}}
-      </p>
-      {{ end }}
+          {{- if ne $equalContrib "" -}}
+            {{- $note := .Get "note" | default "(*Equal Contribution)" -}}
+            {{- printf " %s" $note -}}
+          {{- end -}}
+        </span>
+        {{ end }}
+        <br>
+        <em class="venue">{{ .Get "venue" }}{{ with .Get "venue-short" }} <strong>({{ . }})</strong>{{ end }}, {{ .Get "year" }}</em>
+        {{/* Links using named parameters */}}
+        {{- $hasLinks := or (.Get "project") (.Get "arxiv") (.Get "code") (.Get "pdf") (.Get "video-link") (.Get "demo") -}}
+        {{ if $hasLinks }}
+        <br>
+        <span class="publication-links">
+          {{- $first := true -}}
+          {{- with .Get "project" -}}
+            {{- if not $first }} / {{ end -}}<a href="{{ . }}" target="_blank" rel="noopener noreferrer">project page</a>
+            {{- $first = false -}}
+          {{- end -}}
+          {{- with .Get "arxiv" -}}
+            {{- if not $first }} / {{ end -}}<a href="{{ . }}" target="_blank" rel="noopener noreferrer">arXiv</a>
+            {{- $first = false -}}
+          {{- end -}}
+          {{- with .Get "pdf" -}}
+            {{- if not $first }} / {{ end -}}<a href="{{ . }}" target="_blank" rel="noopener noreferrer">pdf</a>
+            {{- $first = false -}}
+          {{- end -}}
+          {{- with .Get "code" -}}
+            {{- if not $first }} / {{ end -}}<a href="{{ . }}" target="_blank" rel="noopener noreferrer">code</a>
+            {{- $first = false -}}
+          {{- end -}}
+          {{- with .Get "video-link" -}}
+            {{- if not $first }} / {{ end -}}<a href="{{ . }}" target="_blank" rel="noopener noreferrer">video</a>
+            {{- $first = false -}}
+          {{- end -}}
+          {{- with .Get "demo" -}}
+            {{- if not $first }} / {{ end -}}<a href="{{ . }}" target="_blank" rel="noopener noreferrer">demo</a>
+            {{- $first = false -}}
+          {{- end -}}
+        </span>
+        {{ end }}
+      </div>
 
       {{ if .Inner }}
         <div class="publication-abstract">
