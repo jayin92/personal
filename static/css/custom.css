@@ -108,30 +108,55 @@ section {
   transition: all 0.3s ease;
 }
 
-.teaser-image {
+.teaser-image,
+#content .teaser-container .teaser-image {
   width: 100%;
   height: auto;
+  margin: 0;
+  padding: 0;
   display: block;
   transition: opacity 0.3s ease;
 }
 
-.teaser-video {
+.teaser-video,
+#content .teaser-container .teaser-video {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  margin: 0;
+  padding: 0;
+  object-fit: contain;
   opacity: 0;
   transition: opacity 0.3s ease;
 }
 
-/* Show video on hover */
+/* Show video/hover-image on hover */
 .teaser-container:hover .teaser-image {
   opacity: 0;
 }
 
 .teaser-container:hover .teaser-video {
+  opacity: 1;
+}
+
+/* Hover image specific rules - needs high specificity to override theme's #content img */
+#content .teaser-container .teaser-hover-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  object-fit: contain;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+#content .teaser-container:hover .teaser-hover-image,
+#content .teaser-container:hover .teaser-video {
   opacity: 1;
 }
 

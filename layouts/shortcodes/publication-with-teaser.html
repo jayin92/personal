@@ -6,11 +6,17 @@
   <div class="publication-teaser">
     <div class="teaser-container">
       <img src="{{ .Get "image" }}" alt="{{ .Get "title" }} teaser image" class="teaser-image">
-      {{ if .Get "video" }}
-      <video class="teaser-video" muted loop playsinline>
-        <source src="{{ .Get "video" }}" type="video/mp4">
-        Your browser does not support the video tag.
-      </video>
+      {{- $hoverMedia := .Get "video" | default (.Get "hoverImage") -}}
+      {{ if $hoverMedia }}
+        {{- $isImage := or (strings.HasSuffix $hoverMedia ".jpg") (strings.HasSuffix $hoverMedia ".jpeg") (strings.HasSuffix $hoverMedia ".png") (strings.HasSuffix $hoverMedia ".gif") (strings.HasSuffix $hoverMedia ".webp") -}}
+        {{ if $isImage }}
+        <img src="{{ $hoverMedia }}" alt="{{ .Get "title" }} hover image" class="teaser-hover-image teaser-video">
+        {{ else }}
+        <video class="teaser-video" muted loop playsinline>
+          <source src="{{ $hoverMedia }}" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        {{ end }}
       {{ end }}
     </div>
   </div>
