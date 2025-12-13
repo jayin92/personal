@@ -28,29 +28,31 @@ Outside of work and research, I enjoy badminton, dance, and [photography](https:
 
 ## Research Interest
 
--   **3D Reconstruction**
-    -   Neural Radiance Fields (NeRFs)
-    -   3D Gaussian Splatting
-    -   Large-scale Scene Reconstruction
-    -   Satellite Imagery
--   **3D Generation**
-    -   Urban Scene Generation
-    -   Object Generation and Manipulation
--   **Image Segmentation**
-    -   Segment Anything Model
+- **Generative Priors & 3D Synthesis**
+  - Score Distillation Sampling (SDS)
+  - Text-to-3D Generation
+  - Diffusion Models
+- **Neural Rendering & Reconstruction**
+  - 3D Gaussian Splatting
+  - Neural Radiance Fields (NeRFs)
+  - Large-scale Urban Scene Reconstruction
+  - Satellite & Aerial Imagery
+- **Vision Foundation Models**
+  - Segment Anything Model (SAM)
+  - Video Segmentation
 
 ## News
 
--   Sep. 2025: Joined Google as a Software Engineer on the Pixel Camera Team!
--   Sep. 2025: Started my Ph.D. journey at NYCU with [Prof. Yu-Lun Liu](https://yulunalexliu.github.io/)!
--   Jul. 2025: One paper accepted to CoRL 2025: "See, Point, Fly"!
--   Jun. 2025: One paper accepted to ICCV 2025: "LightsOut"!
--   Mar. 2025: Two papers accepted to CVPR 2025: "AuraFusion360" and "SpectroMotion"!
--   Sep. 2024: Began exchange studies in the Department of Computer Science (D-INFK) at ETH Zurich
--   Aug. 2024: Co-authored "BoostMVSNeRFs" paper accepted to the ECCV 2024 Wild3D Workshop as a poster presentation
--   Jul. 2024: My work, BEVGaussian, won the [陽明交大資工系專題競賽佳作 (3rd place of the NYCU CS Undergraduate Research Competition)](https://www.cs.nycu.edu.tw/storage/materials/xeXTWKdsG4IkteKZGx3lxO6WdeZv4Qi0mgaomFJr.pdf)!
--   Jun. 2024: My work, Unbounded Scene Generation, are awarded the [國科會大專學生研究計畫 (NSTC Research Grant for University Students)](https://www.nstc.gov.tw/folksonomy/list/2af9ad9a-1f47-450d-b5a1-2cb43de8290c?l=ch)!
--   May 2024: Co-authored "BoostMVSNeRFs" paper accepted to SIGGRAPH 2024!
+- Sep. 2025: Joined [Google](https://about.google/) as a Software Engineer on the Pixel Camera Team!
+- Sep. 2025: Started my Ph.D. journey at NYCU with [Prof. Yu-Lun Liu](https://yulunalexliu.github.io/)!
+- Jul. 2025: [See, Point, Fly](https://spf-web.pages.dev/) accepted to CoRL 2025!
+- Jun. 2025: [LightsOut](https://ray-1026.github.io/lightsout/) accepted to ICCV 2025!
+- Mar. 2025: [AuraFusion360](https://kkennethwu.github.io/aurafusion360/) and [SpectroMotion](https://cdfan0627.github.io/spectromotion/) accepted to CVPR 2025!
+- Sep. 2024: Exchange studies at [ETH Zurich](https://ethz.ch/), D-INFK
+- Aug. 2024: [BoostMVSNeRFs](https://su-terry.github.io/BoostMVSNeRFs/) presented at [ECCV 2024 Wild3D Workshop](https://wild3d.github.io/)
+- Jul. 2024: BEVGaussian won [NYCU CS Undergraduate Research Competition (3rd place)](https://www.cs.nycu.edu.tw/storage/materials/xeXTWKdsG4IkteKZGx3lxO6WdeZv4Qi0mgaomFJr.pdf)!
+- Jun. 2024: Awarded [NSTC Research Grant for University Students](https://www.nstc.gov.tw/folksonomy/list/2af9ad9a-1f47-450d-b5a1-2cb43de8290c?l=ch)!
+- May 2024: [BoostMVSNeRFs](https://su-terry.github.io/BoostMVSNeRFs/) accepted to SIGGRAPH 2024!
 
 ## Publications
 
