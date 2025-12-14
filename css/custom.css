@@ -1,0 +1,309 @@
+/* Global typography improvements */
+body {
+  line-height: 1.4;
+}
+
+#content ul ul {
+  padding-left: 0.75em;
+}
+
+/* Profile header styling */
+.profile-header {
+  display: flex;
+  flex-direction: column;
+  margin: 2em 0 3em;
+}
+
+.profile-title h1 {
+  margin-top: 0.5em;
+  margin-bottom: 0.2em;
+  font-size: 2em;
+}
+
+.profile-title .subtitle {
+  font-size: 1.2em;
+  color: #555;
+  margin-top: 0;
+  margin-bottom: 1em;
+}
+
+.profile-details p {
+  margin-bottom: 0.7em;
+}
+
+.profile-links {
+  margin-top: 1em;
+}
+
+.profile-links a {
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.profile-links a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .profile-header {
+    margin: 1em 0 2em;
+  }
+  
+  .profile-title h1 {
+    font-size: 1.7em;
+  }
+  
+  .profile-title .subtitle {
+    font-size: 1.1em;
+  }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 1em;
+  margin-bottom: 0.5em;
+}
+
+h2 {
+  font-size: 1.6em;
+  border-bottom: 1px solid #eaecef;
+  padding-bottom: 0.2em;
+}
+
+h3 {
+  font-size: 1.3em;
+}
+
+p {
+  margin-bottom: 0.8em;
+}
+
+section {
+  margin-bottom: 1.5em;
+}
+
+/* Improved spacing between sections */
+#content article {
+  margin-bottom: 2em;
+}
+
+/* Custom styles for publications with teaser images */
+.publication-with-teaser {
+  display: flex;
+  margin-bottom: 0.8em;
+  align-items: center;
+  padding: 0.8em;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  gap: 16px;
+}
+
+.publication-teaser {
+  flex: 0 0 180px;
+  margin-right: 0;
+  transition: transform 0.3s ease;
+}
+
+.teaser-container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 6px;
+  background-color: #f5f5f5;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
+}
+
+.teaser-image,
+#content .teaser-container .teaser-image {
+  position: relative;
+  width: 100%;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  display: block;
+  transition: opacity 0.3s ease;
+}
+
+.teaser-video,
+#content .teaser-container .teaser-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+/* Show video/hover-image on hover */
+.teaser-container:hover .teaser-image,
+.teaser-container.active .teaser-image {
+  opacity: 0;
+}
+
+.teaser-container:hover .teaser-video,
+.teaser-container.active .teaser-video {
+  opacity: 1;
+}
+
+/* Hover hint badge */
+.teaser-hint {
+  position: absolute;
+  bottom: 8px;
+  right: 8px;
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+  font-size: 0.7em;
+  padding: 4px 8px;
+  border-radius: 4px;
+  z-index: 10;
+  pointer-events: none;
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+
+.teaser-container:hover .teaser-hint,
+.teaser-container.active .teaser-hint {
+  opacity: 0;
+}
+
+/* Hover image specific rules - needs high specificity to override theme's #content img */
+#content .teaser-container .teaser-hover-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+#content .teaser-container:hover .teaser-hover-image,
+#content .teaser-container:hover .teaser-video,
+#content .teaser-container.active .teaser-hover-image,
+#content .teaser-container.active .teaser-video {
+  opacity: 1;
+}
+
+.publication-content {
+  flex: 1;
+}
+
+/* Hover effects for publications */
+.publication-with-teaser:hover {
+  background-color: rgba(0,0,0,0.02);
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+.publication-with-teaser:hover .teaser-container {
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transform: translateY(-2px);
+}
+
+/* Improved typography for publication content */
+.publication-content .publication-meta {
+  line-height: 1.5;
+}
+
+.publication-content .publication-title {
+  font-weight: bold;
+  font-size: 1em;
+  text-decoration: none;
+}
+
+.publication-content .publication-title:hover {
+  text-decoration: underline;
+}
+
+.publication-content .authors {
+  font-size: 0.9em;
+  color: #444;
+}
+
+.publication-content .authors a,
+.publication-content .authors strong {
+  font-size: inherit;
+}
+
+.publication-content .venue {
+  font-size: 0.9em;
+}
+
+.publication-content .publication-abstract {
+  margin-top: 0.4em;
+  font-size: 0.9em;
+  line-height: 1.4;
+  color: #555;
+}
+
+.publication-content .publication-links {
+  font-size: 0.9em;
+}
+
+.publication-content .publication-links a,
+.publication-content .publication-links strong {
+  font-size: inherit;
+}
+
+.publication-content .publication-links a {
+  text-decoration: none;
+}
+
+.publication-content .publication-links a:hover {
+  text-decoration: underline;
+}
+
+/* Publication placeholder styles */
+.publication-placeholder {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  border-radius: 4px;
+}
+
+.publication-placeholder h4 {
+  margin: 0 0 10px 0;
+  font-size: 1.2em;
+}
+
+.publication-placeholder p {
+  margin: 0;
+  font-size: 0.9em;
+  opacity: 0.9;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .publication-with-teaser {
+    flex-direction: column;
+    padding: 0.8em;
+  }
+  
+  .publication-teaser {
+    flex: 0 0 100%;
+    margin-right: 0;
+    margin-bottom: 0em;
+  }
+  
+  h2 {
+    font-size: 1.5em;
+  }
+  
+  h3 {
+    font-size: 1.2em;
+  }
+  
+  .publication-content h3 {
+    font-size: 1.2em;
+  }
+}
