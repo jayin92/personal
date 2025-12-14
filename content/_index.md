@@ -28,18 +28,18 @@ Outside of work and research, I enjoy badminton, dance, and [photography](https:
 
 ## Research Interest
 
-- **Generative Priors & 3D Synthesis**
-  - Score Distillation Sampling (SDS)
-  - Text-to-3D Generation
-  - Diffusion Models
-- **Neural Rendering & Reconstruction**
-  - 3D Gaussian Splatting
-  - Neural Radiance Fields (NeRFs)
-  - Large-scale Urban Scene Reconstruction
-  - Satellite & Aerial Imagery
-- **Vision Foundation Models**
-  - Segment Anything Model (SAM)
-  - Video Segmentation
+- **3D Scene Understanding & Synthesis**
+  - Neural Radiance Fields & 3D Gaussian Splatting
+  - Large-scale Urban Reconstruction from Satellite/Aerial Imagery
+  - Dynamic & Specular Scene Modeling
+- **Generative Models for Vision**
+  - Diffusion-based Image Restoration & Inpainting
+  - 3D Generation from Pre-trained Priors
+- **Embodied AI & Robotics**
+  - Vision-Language Navigation
+  - Unmanned Aerial Systems
+  - 3D Perception for Robot Decision-Making
+  - On-Device Perception (Segmentation, Camera Algorithms)
 
 ## News
 
