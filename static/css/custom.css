@@ -3,6 +3,133 @@ body {
   line-height: 1.4;
 }
 
+/* Header section with avatar and text side by side */
+.header-section {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 2em;
+  margin-bottom: 2em;
+  margin-top: 3em;
+}
+
+.header-section .avatar {
+  flex-shrink: 0;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.header-section .avatar img {
+  margin: 0 !important;
+  padding: 0 !important;
+  display: block;
+}
+
+.header-section .header-text {
+  flex: 1;
+}
+
+.header-section .header-text h1 {
+  margin-top: 0 !important;
+  margin-bottom: 0.5em;
+  padding-top: 0 !important;
+  font-size: 3em;
+  line-height: 1.2;
+}
+
+.header-section .header-text p {
+  margin: 0.2em 0;
+  font-size: 1.05em;
+  color: #444;
+}
+
+.header-section .header-text p a {
+  color: inherit;
+}
+
+@media (max-width: 768px) {
+  .header-section {
+    flex-direction: column;
+    gap: 1em;
+    align-items: center;
+  }
+
+  .header-section .avatar {
+    order: -1;
+  }
+
+  .header-section .avatar img {
+    width: 120px !important;
+    height: 120px !important;
+    max-width: 120px !important;
+  }
+
+  .header-section .header-text {
+    text-align: center;
+  }
+
+  .header-section .header-text h1 {
+    font-size: 1.8em;
+  }
+}
+
+/* Affiliation logos */
+.affiliation-logos {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 2.5em;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1.5em;
+  margin-bottom: 2em;
+  width: 100%;
+  text-align: center;
+}
+
+.affiliation-logos a {
+  display: inline-block;
+  transition: opacity 0.3s ease;
+  flex-shrink: 0;
+}
+
+.affiliation-logos a:hover {
+  opacity: 0.7;
+}
+
+.affiliation-logos img {
+  height: 60px;
+  width: 60px;
+  object-fit: contain;
+  display: block;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .affiliation-logos {
+    gap: 1.5em;
+  }
+
+  .affiliation-logos img {
+    height: 48px;
+    width: 48px;
+  }
+}
+
+/* Intro section box */
+.intro-box {
+  margin-bottom: 2em;
+  text-align: justify;
+}
+
+.intro-box p {
+  text-align: justify;
+  margin-bottom: 1em;
+}
+
+.intro-box p:last-child {
+  margin-bottom: 0;
+}
+
 #content ul ul {
   padding-left: 0.75em;
 }

@@ -2,57 +2,56 @@
 title = "Jie-Ying Lee 李杰穎"
 +++
 
-{{< figure class="avatar" src="/avatar.png" alt="avatar">}}
+<div class="header-section">
+<div class="header-text">
 
-Ph.D. Student  
-Department of Computer Science  
-National Yang Ming Chiao Tung University, Taiwan
+# Jie-Ying Lee 李杰穎
 
-Software Engineer, Pixel Camera Team, Google  
+Ph.D. Student @ NYCU CS  
+Software Engineer @ Google Pixel Camera
 
 Email: [jayinnn.cs14@nycu.edu.tw](mailto:jayinnn.cs14@nycu.edu.tw)
 
-[CV](https://raw.githubusercontent.com/jayin92/CV/main/cv.pdf) / [Google Scholar](https://scholar.google.com/citations?view_op=list_works&hl=zh-TW&user=mKB6voEAAAAJ) / [LinkedIn](https://www.linkedin.com/in/jayinnn/) / [GitHub](http://github.com/jayin92) / [Personal Blog](https://blog.jayinnn.dev/)
+[CV](https://mozilla.github.io/pdf.js/web/viewer.html?file=https://raw.githubusercontent.com/jayin92/CV/main/cv.pdf) / [Scholar](https://scholar.google.com/citations?view_op=list_works&hl=zh-TW&user=mKB6voEAAAAJ) / [LinkedIn](https://www.linkedin.com/in/jayinnn/) / [GitHub](http://github.com/jayin92) / [Personal Blog](https://blog.jayinnn.dev/)
+
+</div>
+{{< figure class="avatar" src="/avatar.png" alt="avatar">}}
+</div>
 
 ## About Me
 
-Hi! I'm Jie-Ying (Jay) Lee. I am a Ph.D. student in Computer Science at National Yang Ming Chiao Tung University, advised by [Prof. Yu-Lun Liu](https://yulunalexliu.github.io/). I am also a Software Engineer on Google's Pixel Camera Team, where I develop on-device algorithms for camera.
+<div class="intro-box">
 
-I received my B.S. in Computer Science from National Yang Ming Chiao Tung University. During my undergraduate studies, I was an exchange student at ETH Zurich.
+I'm a Ph.D. student in [Computer Science](https://www.cs.nycu.edu.tw/?locale=en) at National Yang Ming Chiao Tung University, advised by [Prof. Yu-Lun Liu](https://yulunalexliu.github.io/), and a Software Engineer on Google's Pixel Camera Team. I work on **3D scene synthesis**, **generative models for vision**, and **embodied AI**, particularly focusing on **Neural Radiance Fields**, **3D Gaussian Splatting**, **vision-language navigation**, and **on-device perception**.
 
-In Summer 2024, I interned with Google's Pixel Camera Team, where I integrated the Segment Anything Model (SAM) for mobile devices, hosted by [Yu-Lin Chang](https://scholar.google.com/citations?user=0O9rukQAAAAJ&hl=en) and [Chung-Kai Hsieh](https://www.linkedin.com/in/chungkaihsieh). My industry experience also includes positions as an R&D Intern at Microsoft and a Backend Engineer Intern at Appier.
+I received my B.S. in Computer Science from National Yang Ming Chiao Tung University, with an exchange semester at ETH Zurich. My industry experience includes internships at Google (Pixel Camera Team), Microsoft, and Appier.
 
-I am actively seeking research collaborations.
+**I am actively seeking research collaborations.** If you are interested in working with me, don't hesitate to reach out.
 
-Outside of work and research, I enjoy badminton, dance, and [photography](https://www.instagram.com/photograbear_/).
+<div class="affiliation-logos">
+  <a href="https://about.google/" target="_blank" rel="noopener noreferrer">
+    <img src="/google.png" alt="Google" />
+  </a>
+  <a href="https://www.cs.nycu.edu.tw/?locale=en" target="_blank" rel="noopener noreferrer">
+    <img src="/nycu.png" alt="NYCU" />
+  </a>
+  <a href="https://ethz.ch/" target="_blank" rel="noopener noreferrer">
+    <img src="/eth.png" alt="ETH Zurich" />
+  </a>
+</div>
 
-## Research Interest
+</div>
 
-- **3D Scene Understanding & Synthesis**
-  - Neural Radiance Fields & 3D Gaussian Splatting
-  - Large-scale Urban Reconstruction from Satellite/Aerial Imagery
-  - Dynamic & Specular Scene Modeling
-- **Generative Models for Vision**
-  - Diffusion-based Image Restoration & Inpainting
-  - 3D Generation from Pre-trained Priors
-- **Embodied AI & Robotics**
-  - Vision-Language Navigation
-  - Unmanned Aerial Systems
-  - 3D Perception for Robot Decision-Making
-  - On-Device Perception (Segmentation, Camera Algorithms)
+
 
 ## News
 
-- Sep. 2025: Joined [Google](https://about.google/) as a Software Engineer on the Pixel Camera Team!
-- Sep. 2025: Started my Ph.D. journey at NYCU with [Prof. Yu-Lun Liu](https://yulunalexliu.github.io/)!
-- Jul. 2025: [See, Point, Fly](https://spf-web.pages.dev/) accepted to CoRL 2025!
-- Jun. 2025: [LightsOut](https://ray-1026.github.io/lightsout/) accepted to ICCV 2025!
-- Mar. 2025: [AuraFusion360](https://kkennethwu.github.io/aurafusion360/) and [SpectroMotion](https://cdfan0627.github.io/spectromotion/) accepted to CVPR 2025!
-- Sep. 2024: Exchange studies at [ETH Zurich](https://ethz.ch/), D-INFK
-- Aug. 2024: [BoostMVSNeRFs](https://su-terry.github.io/BoostMVSNeRFs/) presented at [ECCV 2024 Wild3D Workshop](https://wild3d.github.io/)
-- Jul. 2024: BEVGaussian won [NYCU CS Undergraduate Research Competition (3rd place)](https://www.cs.nycu.edu.tw/storage/materials/xeXTWKdsG4IkteKZGx3lxO6WdeZv4Qi0mgaomFJr.pdf)!
-- Jun. 2024: Awarded [NSTC Research Grant for University Students](https://www.nstc.gov.tw/folksonomy/list/2af9ad9a-1f47-450d-b5a1-2cb43de8290c?l=ch)!
-- May 2024: [BoostMVSNeRFs](https://su-terry.github.io/BoostMVSNeRFs/) accepted to SIGGRAPH 2024!
+- **Sep. 2025:** Joined [Google](https://about.google/) as a Software Engineer on the Pixel Camera Team and started my Ph.D. at NYCU with [Prof. Yu-Lun Liu](https://yulunalexliu.github.io/)
+- **Jul. 2025:** [See, Point, Fly](https://spf-web.pages.dev/) accepted to **CoRL 2025**
+- **Jun. 2025:** [LightsOut](https://ray-1026.github.io/lightsout/) accepted to **ICCV 2025**
+- **Mar. 2025:** Two papers accepted to **CVPR 2025**: [AuraFusion360](https://kkennethwu.github.io/aurafusion360/) and [SpectroMotion](https://cdfan0627.github.io/spectromotion/)
+- **Sep. 2024:** [Exchange semester](https://blog.jayinnn.dev/posts/eth/) at [ETH Zurich](https://ethz.ch/), D-INFK
+- **May 2024:** [BoostMVSNeRFs](https://su-terry.github.io/BoostMVSNeRFs/) accepted to **SIGGRAPH 2024**
 
 ## Publications
 
@@ -71,7 +70,7 @@ Outside of work and research, I enjoy badminton, dance, and [photography](https:
     pdf="https://arxiv.org/pdf/2510.15869"
     video-link="https://youtu.be/zj2-aGSe6ao"
 >}}
-Creating large-scale, photorealistic 3D urban scenes traditionally requires expensive 3D scanning and manual annotation. We present Skyfall-GS, a novel framework that synthesizes city-block scale environments by combining satellite imagery with diffusion models, enabling real-time exploration without costly 3D annotations.
+We present Skyfall-GS, a framework that synthesizes photorealistic, city-block scale 3D urban scenes from satellite imagery using diffusion models, eliminating the need for expensive 3D scanning and manual annotation while enabling real-time exploration.
 {{< /publication-with-teaser >}}
 
 {{< publication-with-teaser
@@ -88,7 +87,7 @@ Creating large-scale, photorealistic 3D urban scenes traditionally requires expe
     video-link="https://youtu.be/VNzJ9Z_dJNI"
     demo="https://huggingface.co/spaces/RayTsai-030/LightsOut-demo"
 >}}
-LightsOut, a diffusion-based outpainting framework tailored to enhance SIFR by reconstructing off-frame light sources by leveraging a multitask regression module and LoRA fine-tuned diffusion model to ensure realistic and physically consistent outpainting results.
+We present LightsOut, a diffusion-based outpainting framework that enhances lens flare removal by reconstructing off-frame light sources. Our approach combines a multitask regression module with LoRA fine-tuned diffusion models to produce realistic and physically consistent results.
 {{< /publication-with-teaser >}}
 
 {{< publication-with-teaser
@@ -106,7 +105,7 @@ LightsOut, a diffusion-based outpainting framework tailored to enhance SIFR by r
     code="https://github.com/Hu-chih-yao/see-point-fly"
     video-link="https://youtu.be/EQPBkNhAuyU"
 >}}
-This work presents See, Point, Fly (SPF), a training-free aerial vision-and-language navigation (AVLN) framework built atop vision-language models (VLMs), to consider action prediction for AVLN as a 2D spatial grounding task.
+We present See, Point, Fly (SPF), a training-free framework for aerial vision-and-language navigation. By leveraging vision-language models and reformulating navigation as a 2D spatial grounding task, SPF enables universal unmanned aerial navigation without task-specific training.
 {{< /publication-with-teaser >}}
 
 {{< publication-with-teaser
@@ -124,7 +123,7 @@ This work presents See, Point, Fly (SPF), a training-free aerial vision-and-lang
     code="https://github.com/kkennethwu/AuraFusion360_official.git"
     video-link="https://www.youtube.com/watch?v=V1_EMXtYhTE"
 >}}
-The approach introduces (1) depth-aware unseen mask generation for accurate occlusion identification, (2) Adaptive Guided Depth Diffusion, a zero-shot method for accurate initial point placement without requiring additional training, and (3) SDEdit-based detail enhancement for multi-view coherence.
+We introduce AuraFusion360, a reference-based 360° scene inpainting method with three key innovations: depth-aware occlusion identification, Adaptive Guided Depth Diffusion for zero-shot point placement, and SDEdit-based enhancement for multi-view coherence.
 {{< /publication-with-teaser >}}
 
 {{< publication-with-teaser
@@ -140,7 +139,7 @@ The approach introduces (1) depth-aware unseen mask generation for accurate occl
     code="https://github.com/cdfan0627/SpectroMotion"
     video-link="https://www.youtube.com/watch?v=yqKLUDIdN9g"
 >}}
-SpectroMotion is presented, a novel approach that combines 3D Gaussian Splatting with physically-based rendering (PBR) and deformation fields to reconstruct dynamic specular scenes and is the only existing 3DGS method capable of synthesizing photorealistic real-world dynamic specular scenes.
+We present SpectroMotion, the first 3D Gaussian Splatting method capable of reconstructing photorealistic dynamic specular scenes. By combining 3DGS with physically-based rendering and deformation fields, we achieve high-quality synthesis of challenging real-world dynamic reflective surfaces.
 {{< /publication-with-teaser >}}
 
 {{< publication-with-teaser
@@ -158,5 +157,11 @@ SpectroMotion is presented, a novel approach that combines 3D Gaussian Splatting
     code="https://github.com/Su-Terry/BoostMVSNeRFs"
     video-link="https://www.youtube.com/watch?v=tX4EkFgm0ng"
 >}}
-This paper presents a novel approach called BoostMVSNeRFs to enhance the rendering quality of MVS-based NeRFs in large-scale scenes, and identifies limitations in MVS-based NeRF methods, such as restricted viewport coverage and artifacts due to limited input views.
+We present BoostMVSNeRFs, a method that enhances rendering quality for MVS-based NeRFs in large-scale scenes. Our approach addresses key limitations including restricted viewport coverage and artifacts from limited input views, enabling generalizable view synthesis in complex environments.
 {{< /publication-with-teaser >}}
+
+## Misc.
+
+Beyond research, I'm passionate about staying active through badminton and hip-hop dance. I also enjoy capturing moments through [photography](https://www.instagram.com/photograbear_/).
+
+Music-wise, I'm into Taiwanese indie and hip-hop, frequently listening to artists like [Gummy B](https://www.youtube.com/watch?v=QvrIk0Ff_DI), [草東沒有派對 (No Party For Cao Dong)](https://youtu.be/j2311FZWoFQ), and [國蛋 GorDoN](https://youtu.be/BZJLX-jDa9k).
