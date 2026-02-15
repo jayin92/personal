@@ -51,6 +51,8 @@ I received my B.S. in Computer Science from National Yang Ming Chiao Tung Univer
 - **Jun. 2025:** [LightsOut](https://ray-1026.github.io/lightsout/) accepted to **ICCV 2025**
 - **Mar. 2025:** Two papers accepted to **CVPR 2025**: [AuraFusion360](https://kkennethwu.github.io/aurafusion360/) and [SpectroMotion](https://cdfan0627.github.io/spectromotion/)
 - **Sep. 2024:** [Exchange semester](https://blog.jayinnn.dev/posts/eth/) at [ETH Zurich](https://ethz.ch/), D-INFK
+- **Jul. 2024:** BEVGaussian won [NYCU CS Undergraduate Research Competition (3rd place)](https://www.cs.nycu.edu.tw/storage/materials/xeXTWKdsG4IkteKZGx3lxO6WdeZv4Qi0mgaomFJr.pdf)
+- **Jun. 2024:** Awarded [NSTC Research Grant for University Students](https://www.nstc.gov.tw/folksonomy/list/2af9ad9a-1f47-450d-b5a1-2cb43de8290c?l=ch)
 - **May 2024:** [BoostMVSNeRFs](https://su-terry.github.io/BoostMVSNeRFs/) accepted to **SIGGRAPH 2024**
 
 ## Publications
@@ -159,6 +161,10 @@ We present SpectroMotion, the first 3D Gaussian Splatting method capable of reco
 >}}
 We present BoostMVSNeRFs, a method that enhances rendering quality for MVS-based NeRFs in large-scale scenes. Our approach addresses key limitations including restricted viewport coverage and artifacts from limited input views, enabling generalizable view synthesis in complex environments.
 {{< /publication-with-teaser >}}
+
+## Service
+
+- **Teaching Assistant:** [Image and Video Generation](https://github.com/jayin92/Lab4-FlowMatching), NYCU (2025 Fall)
 
 ## Misc.
 
