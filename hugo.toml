@@ -41,6 +41,14 @@ googleAnalytics = "G-XFCYQ29SLK"  # add your tracking id
     icon = "ai ai-google-scholar"
     title = "Scholar"
     url = "https://scholar.google.com/citations?user=mKB6voEAAAAJ"
+  [[params.socialIcons]]
+    icon = "fab fa-x-twitter"
+    title = "X"
+    url = "https://x.com/jayinnn"
+  [[params.socialIcons]]
+    icon = "fab fa-threads"
+    title = "Threads"
+    url = "https://threads.com/@jayinnn"
 
 [permalinks]
   "/" = "/:filename"

@@ -5,14 +5,14 @@ title = "Jie-Ying Lee 李杰穎"
 <div class="header-section">
 <div class="header-text">
 
-# Jie-Ying Lee 李杰穎
+<span class="large-name">Jie-Ying Lee 李杰穎</span>
 
 Ph.D. Student @ NYCU CS  
 Software Engineer @ Google Pixel Camera
 
 Email: [jayinnn.cs14@nycu.edu.tw](mailto:jayinnn.cs14@nycu.edu.tw)
 
-[CV](https://mozilla.github.io/pdf.js/web/viewer.html?file=https://raw.githubusercontent.com/jayin92/CV/main/cv.pdf) / [Scholar](https://scholar.google.com/citations?view_op=list_works&hl=zh-TW&user=mKB6voEAAAAJ) / [LinkedIn](https://www.linkedin.com/in/jayinnn/) / [GitHub](http://github.com/jayin92) / [Blog](https://blog.jayinnn.dev/)
+[CV](https://mozilla.github.io/pdf.js/web/viewer.html?file=https://raw.githubusercontent.com/jayin92/CV/main/cv.pdf) / [Scholar](https://scholar.google.com/citations?view_op=list_works&hl=zh-TW&user=mKB6voEAAAAJ) / [LinkedIn](https://www.linkedin.com/in/jayinnn/) / [GitHub](http://github.com/jayin92) / [X](https://x.com/jayinnn) / [Threads](https://threads.com/@jayinnn) / [Blog](https://blog.jayinnn.dev/)
 
 </div>
 {{< figure class="avatar" src="/avatar.png" alt="avatar">}}
@@ -29,15 +29,22 @@ I received my B.S. in Computer Science from National Yang Ming Chiao Tung Univer
 **I am actively seeking research collaborations.** If you are interested in working with me, don't hesitate to reach out.
 
 <div class="affiliation-logos">
-  <a href="https://about.google/" target="_blank" rel="noopener noreferrer">
+  <div class="affiliation-item">
     <img src="/google.png" alt="Google" />
-  </a>
-  <a href="https://www.cs.nycu.edu.tw/?locale=en" target="_blank" rel="noopener noreferrer">
+    <span class="affiliation-name">Google</span>
+    <span class="affiliation-title">SWE (2025 - Present)</span>
+  </div>
+  <div class="affiliation-item">
     <img src="/nycu.png" alt="NYCU" />
-  </a>
-  <a href="https://ethz.ch/" target="_blank" rel="noopener noreferrer">
+    <span class="affiliation-name">NYCU</span>
+    <span class="affiliation-title">Ph.D. Student (2025 - Present)</span>
+    <span class="affiliation-title">B.S in Computer Science (2021 - 2025)</span>
+  </div>
+  <div class="affiliation-item">
     <img src="/eth.png" alt="ETH Zurich" />
-  </a>
+    <span class="affiliation-name">ETH Zurich</span>
+    <span class="affiliation-title">Exchange Student (2024 - 2025)</span>
+  </div>
 </div>
 </div>
 
