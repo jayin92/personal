@@ -133,12 +133,27 @@ body {
 
 @media (max-width: 768px) {
   .affiliation-logos {
-    gap: 1.5em;
+    flex-wrap: wrap;           /* Enable wrapping to multiple rows */
+    gap: 0.8em 1em;           /* Tighter spacing: 0.8em vertical, 1em horizontal */
+    justify-content: center;   /* Center wrapped items */
+  }
+
+  .affiliation-logos .affiliation-item {
+    flex-shrink: 1;            /* Allow items to shrink */
+    min-width: 0;              /* Enable shrinking below content size */
   }
 
   .affiliation-logos img {
-    height: 48px;
-    width: 48px;
+    height: 40px;              /* Reduce from 48px */
+    width: 40px;
+  }
+
+  .affiliation-logos .affiliation-name {
+    font-size: 0.85em;         /* Reduce institution name size */
+  }
+
+  .affiliation-logos .affiliation-title {
+    font-size: 0.75em;         /* Reduce role/period text size */
   }
 }
 

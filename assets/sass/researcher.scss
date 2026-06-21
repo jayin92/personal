@@ -163,4 +163,7 @@ $y-medium: 1.0rem;
     a {
         @extend %link-dark;
     }
+    a.fa-1x {
+        margin: 0 0.45rem;
+    }
 }

@@ -7,7 +7,7 @@ title = "Jie-Ying Lee 李杰穎"
 
 <span class="large-name">Jie-Ying Lee 李杰穎</span>
 
-Ph.D. Student @ NYCU CS  
+Research Assistant @ NYCU CS  
 Software Engineer @ Google Pixel Camera
 
 Email: [jayinnn.cs14@nycu.edu.tw](mailto:jayinnn.cs14@nycu.edu.tw)
@@ -22,7 +22,7 @@ Email: [jayinnn.cs14@nycu.edu.tw](mailto:jayinnn.cs14@nycu.edu.tw)
 
 <div class="intro-box">
 
-I'm a Ph.D. student in [Computer Science](https://www.cs.nycu.edu.tw/?locale=en) at National Yang Ming Chiao Tung University, advised by [Prof. Yu-Lun Liu](https://yulunalexliu.github.io/), and a Software Engineer on Google's Pixel Camera Team. I work on **3D scene synthesis**, **generative models for vision**, and **embodied AI**, particularly focusing on **Neural Radiance Fields**, **3D Gaussian Splatting**, **vision-language navigation**, and **on-device perception**.
+I'm a research assistant in [Computer Science](https://www.cs.nycu.edu.tw/?locale=en) at National Yang Ming Chiao Tung University, working with [Prof. Yu-Lun Liu](https://yulunalexliu.github.io/), and a Software Engineer on Google's Pixel Camera Team. I work on **3D scene synthesis**, **generative models for vision**, and **embodied AI**, particularly focusing on **Neural Radiance Fields**, **3D Gaussian Splatting**, **vision-language navigation**, and **on-device perception**.
 
 I received my B.S. in Computer Science from National Yang Ming Chiao Tung University, with an exchange semester at ETH Zurich. My industry experience includes internships at Google (Pixel Camera Team), Microsoft, and Appier.
 
@@ -37,7 +37,7 @@ I received my B.S. in Computer Science from National Yang Ming Chiao Tung Univer
   <div class="affiliation-item">
     <img src="/nycu.png" alt="NYCU" />
     <span class="affiliation-name">NYCU</span>
-    <span class="affiliation-title">Ph.D. Student (2025 - Present)</span>
+    <span class="affiliation-title">Research Assistant (2025 - Present)</span>
     <span class="affiliation-title">B.S in Computer Science (2021 - 2025)</span>
   </div>
   <div class="affiliation-item">
@@ -50,7 +50,9 @@ I received my B.S. in Computer Science from National Yang Ming Chiao Tung Univer
 
 ## News
 
-- **Sep. 2025:** Joined [Google](https://about.google/) as a Software Engineer on the Pixel Camera Team and started my Ph.D. at NYCU with [Prof. Yu-Lun Liu](https://yulunalexliu.github.io/)
+- **Jun. 2026:** [Skyfall-GS](https://skyfall-gs.jayinnn.dev/) accepted to **ECCV 2026**
+- **Feb. 2026:** [Pantheon360](https://koi953215.github.io/pantheon360_page/) accepted to **CVPR 2026**
+- **Sep. 2025:** Joined [Google](https://about.google/) as a Software Engineer on the Pixel Camera Team and joined NYCU as a research assistant, working with [Prof. Yu-Lun Liu](https://yulunalexliu.github.io/)
 - **Jul. 2025:** [See, Point, Fly](https://spf-web.pages.dev/) accepted to **CoRL 2025**
 - **Jun. 2025:** [LightsOut](https://ray-1026.github.io/lightsout/) accepted to **ICCV 2025**
 - **Mar. 2025:** Two papers accepted to **CVPR 2025**: [AuraFusion360](https://kkennethwu.github.io/aurafusion360/) and [SpectroMotion](https://cdfan0627.github.io/spectromotion/)
@@ -67,9 +69,9 @@ I received my B.S. in Computer Science from National Yang Ming Chiao Tung Univer
     title="Skyfall-GS: Synthesizing Immersive 3D Urban Scenes from Satellite Imagery"
     url="https://skyfall-gs.jayinnn.dev/"
     authors="jylee,yrliu,srtsai,wcchang,chwu,jwchan,zjzhao,hubertlin,ylliu"
-    venue="arXiv"
+    venue="ECCV"
     venue-short=""
-    year="2025"
+    year="2026"
     project="https://skyfall-gs.jayinnn.dev/"
     arxiv="https://arxiv.org/abs/2510.15869"
     code="https://github.com/jayin92/skyfall-gs"
@@ -77,6 +79,43 @@ I received my B.S. in Computer Science from National Yang Ming Chiao Tung Univer
     video-link="https://youtu.be/zj2-aGSe6ao"
 >}}
 We present Skyfall-GS, a framework that synthesizes photorealistic, city-block scale 3D urban scenes from satellite imagery using diffusion models, eliminating the need for expensive 3D scanning and manual annotation while enabling real-time exploration.
+{{< /publication-with-teaser >}}
+
+{{< publication-with-teaser
+    image="/images/publications/brdfusion-teaser.jpg"
+    video="/videos/publications/brdfusion-teaser.mp4"
+    title="BRDFusion: Physics Meets Generation for Urban Scene Inverse Rendering"
+    url="https://shigon255.github.io/brdfusion-page/"
+    authors="yrliu,jylee,zhhuang,ylliu,chlin"
+    corresponding="ylliu,chlin"
+    note="(†Corresponding Author)"
+    venue="arXiv"
+    venue-short=""
+    year="2026"
+    project="https://shigon255.github.io/brdfusion-page/"
+    arxiv="https://arxiv.org/abs/2606.17049"
+    code="https://github.com/shigon255/BRDFusion"
+    pdf="https://arxiv.org/pdf/2606.17049"
+>}}
+We present BRDFusion, an inverse rendering framework for urban scenes that unifies physics-based rendering with generative diffusion priors to recover explicit material and lighting properties from video, enabling high-quality relighting and simulation.
+{{< /publication-with-teaser >}}
+
+{{< publication-with-teaser
+    image="/images/publications/pantheon360-teaser.jpg"
+    video="/videos/publications/pantheon360-teaser.mp4"
+    title="Pantheon360: Taming Digital Twin Generation via 3D-Aware 360° Video Diffusion"
+    url="https://koi953215.github.io/pantheon360_page/"
+    authors="thchen,yhchen,taotu,jylee,cywu,fzlin,hyzhang,dpaz,xyhuang,ylguo,ylliu,ywang,lren"
+    equal="thchen,yhchen"
+    corresponding="ylguo,ylliu,ywang"
+    note="(*Equal Contribution, †Corresponding Author)"
+    venue="CVPR"
+    venue-short=""
+    year="2026"
+    project="https://koi953215.github.io/pantheon360_page/"
+    arxiv="https://arxiv.org/abs/2605.25449"
+>}}
+We present Pantheon360, a controllable 360° video diffusion framework for digital twin generation that synthesizes high-fidelity videos from sparse 360° inputs, letting the diffusion model focus on photorealistic texture refinement while a 3D Cache enforces global geometric consistency.
 {{< /publication-with-teaser >}}
 
 {{< publication-with-teaser
@@ -168,6 +207,7 @@ We present BoostMVSNeRFs, a method that enhances rendering quality for MVS-based
 
 ## Service
 
+- **Reviewer:** ECCV, IJCV
 - **Teaching Assistant:** [Image and Video Generation](https://github.com/jayin92/Lab4-FlowMatching), NYCU (2025 Fall)
 
 ## Misc.

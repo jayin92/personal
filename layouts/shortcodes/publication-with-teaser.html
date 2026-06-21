@@ -1,5 +1,6 @@
 {{- $authorIds := .Get "authors" | default "" -}}
 {{- $equalContrib := .Get "equal" | default "" -}}
+{{- $corresponding := .Get "corresponding" | default "" -}}
 {{- $authors := .Site.Data.authors.authors -}}
 
 <div class="publication-with-teaser">
@@ -15,9 +16,18 @@
         <script>
           (function() {
             const container = document.currentScript.parentElement;
-            container.addEventListener('click', function() {
+
+            function handleInteraction(event) {
+              // Prevent ghost clicks on mobile
+              if (event.type === 'touchend') {
+                event.preventDefault();
+              }
               container.classList.toggle('active');
-            });
+            }
+
+            // Bind both touch and click for cross-device compatibility
+            container.addEventListener('touchend', handleInteraction);
+            container.addEventListener('click', handleInteraction);
           })();
         </script>
         {{ else }}
@@ -82,12 +92,19 @@
         <span class="authors">
           {{- $authorIdList := split $authorIds "," -}}
           {{- $equalContribList := split $equalContrib "," -}}
+          {{- $correspondingList := split $corresponding "," -}}
           {{- range $index, $authorId := $authorIdList -}}
             {{- $authorId := trim $authorId " " -}}
             {{- $isEqual := false -}}
             {{- range $equalId := $equalContribList -}}
               {{- if eq (trim $equalId " ") $authorId -}}
                 {{- $isEqual = true -}}
+              {{- end -}}
+            {{- end -}}
+            {{- $isCorresponding := false -}}
+            {{- range $correspondingId := $correspondingList -}}
+              {{- if eq (trim $correspondingId " ") $authorId -}}
+                {{- $isCorresponding = true -}}
               {{- end -}}
             {{- end -}}
             {{- if gt $index 0 -}},&nbsp;{{- end -}}
@@ -109,11 +126,12 @@
                 {{- end -}}
               {{- end -}}
               {{- if $isEqual -}}*{{- end -}}
+              {{- if $isCorresponding -}}&dagger;{{- end -}}
             {{- else -}}
               {{ $authorId }}
             {{- end -}}
           {{- end -}}
-          {{- if ne $equalContrib "" -}}
+          {{- if or (ne $equalContrib "") (ne $corresponding "") -}}
             {{- $note := .Get "note" | default "(*Equal Contribution)" -}}
             {{- printf " %s" $note -}}
           {{- end -}}
