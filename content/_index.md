@@ -205,6 +205,46 @@ We present SpectroMotion, the first 3D Gaussian Splatting method capable of reco
 We present BoostMVSNeRFs, a method that enhances rendering quality for MVS-based NeRFs in large-scale scenes. Our approach addresses key limitations including restricted viewport coverage and artifacts from limited input views, enabling generalizable view synthesis in complex environments.
 {{< /publication-with-teaser >}}
 
+## Projects
+
+{{< publication-with-teaser
+    image="/images/projects/pbr-renderer.jpg"
+    title="Physically-based Renderer"
+    url="https://blog.jayinnn.dev/posts/eth-cg24-final-project/"
+    authors="jylee,wwang"
+    venue="Computer Graphics, ETH Zurich"
+    year="2024"
+    blog="https://blog.jayinnn.dev/posts/eth-cg24-final-project/"
+    report="https://blog.jayinnn.dev/eth-cg24/project/"
+    slides="https://blog.jayinnn.dev/eth-cg24/rendering-competition-slides.pdf"
+>}}
+Built a complete physically-based renderer in C++ on top of the Nori 2 educational framework: path tracing with multiple importance sampling, Disney BSDF, image and procedural textures, a realistic camera model, and Intel Open Image Denoise integration. Our competition entry *In Between* — a dawn view from a waterfall cave inspired by Seljalandsfoss, Iceland — renders the clouds and waterfall mist as heterogeneous participating media from NanoVDB volumes, combining equiangular sampling with the Henyey-Greenstein phase function under environment-map lighting. Selected as a finalist of the course rendering competition.
+{{< /publication-with-teaser >}}
+
+{{< publication-with-teaser
+    image="/images/projects/os-kernel.svg"
+    title="Operating System Capstone: Bare-metal Kernel on Raspberry Pi"
+    url="https://github.com/jayin92/osc2024/tree/110550088"
+    authors="jylee"
+    venue="Operating System Capstone, NYCU"
+    year="2024"
+    code="https://github.com/jayin92/osc2024/tree/110550088"
+>}}
+Implemented a bare-metal OS kernel in C and assembly for Raspberry Pi 3B+ (ARMv8-A, AArch64) across eight labs: UART shell and mailbox interface, a self-hosted UART bootloader with device tree parsing, exception and interrupt handling, a buddy-system memory allocator, threads and user processes with system calls and signals, virtual memory, and a virtual file system with tmpfs, initramfs, and device file systems.
+{{< /publication-with-teaser >}}
+
+{{< publication-with-teaser
+    image="/images/projects/p-compiler.svg"
+    title="P Language Compiler"
+    url="https://github.com/jayin92/NYCU-intro-to-compiler"
+    authors="jylee"
+    venue="Compiler Design, NYCU"
+    year="2024"
+    code="https://github.com/jayin92/NYCU-intro-to-compiler"
+>}}
+Built a complete compiler in C++ for P, a Pascal-like language, using flex and bison: scanner, parser, AST construction, semantic analysis with symbol tables, and RISC-V code generation executed on the Spike simulator.
+{{< /publication-with-teaser >}}
+
 ## Service
 
 - **Reviewer:** ECCV, IJCV

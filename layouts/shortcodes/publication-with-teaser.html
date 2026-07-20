@@ -5,9 +5,9 @@
 
 <div class="publication-with-teaser">
   <div class="publication-teaser">
-    <div class="teaser-container">
+    {{- $hoverMedia := .Get "video" | default (.Get "hoverImage") -}}
+    <div class="teaser-container{{ if $hoverMedia }} has-hover{{ end }}">
       <img src="{{ .Get "image" }}" alt="{{ .Get "title" }} teaser image" class="teaser-image">
-      {{- $hoverMedia := .Get "video" | default (.Get "hoverImage") -}}
       {{ if $hoverMedia }}
         <span class="teaser-hint">▶ Hover / Tap</span>
         {{- $isImage := or (strings.HasSuffix $hoverMedia ".jpg") (strings.HasSuffix $hoverMedia ".jpeg") (strings.HasSuffix $hoverMedia ".png") (strings.HasSuffix $hoverMedia ".gif") (strings.HasSuffix $hoverMedia ".webp") -}}
@@ -140,13 +140,25 @@
         <br>
         <em class="venue">{{ .Get "venue" }}{{ with .Get "venue-short" }} <strong>({{ . }})</strong>{{ end }}, {{ .Get "year" }}</em>
         {{/* Links using named parameters */}}
-        {{- $hasLinks := or (.Get "project") (.Get "arxiv") (.Get "code") (.Get "pdf") (.Get "video-link") (.Get "demo") -}}
+        {{- $hasLinks := or (.Get "project") (.Get "blog") (.Get "report") (.Get "slides") (.Get "arxiv") (.Get "code") (.Get "pdf") (.Get "video-link") (.Get "demo") -}}
         {{ if $hasLinks }}
         <br>
         <span class="publication-links">
           {{- $first := true -}}
           {{- with .Get "project" -}}
             {{- if not $first }} / {{ end -}}<a href="{{ . }}" target="_blank" rel="noopener noreferrer">project page</a>
+            {{- $first = false -}}
+          {{- end -}}
+          {{- with .Get "blog" -}}
+            {{- if not $first }} / {{ end -}}<a href="{{ . }}" target="_blank" rel="noopener noreferrer">blog post</a>
+            {{- $first = false -}}
+          {{- end -}}
+          {{- with .Get "report" -}}
+            {{- if not $first }} / {{ end -}}<a href="{{ . }}" target="_blank" rel="noopener noreferrer">report</a>
+            {{- $first = false -}}
+          {{- end -}}
+          {{- with .Get "slides" -}}
+            {{- if not $first }} / {{ end -}}<a href="{{ . }}" target="_blank" rel="noopener noreferrer">slides</a>
             {{- $first = false -}}
           {{- end -}}
           {{- with .Get "arxiv" -}}

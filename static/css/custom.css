@@ -308,8 +308,8 @@ section {
 }
 
 /* Show video/hover-image on hover */
-.teaser-container:hover .teaser-image,
-.teaser-container.active .teaser-image {
+.teaser-container.has-hover:hover .teaser-image,
+.teaser-container.has-hover.active .teaser-image {
   opacity: 0;
 }
 
