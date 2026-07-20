@@ -428,6 +428,14 @@ section {
   text-decoration: underline;
 }
 
+/* GitHub star counts on publication code links */
+.publication-content .publication-links .gh-stars {
+  display: inline-block; /* confines the anchor's hover underline to the word "code" */
+  margin-left: 0.35em;
+  font-size: 0.85em;
+  color: #888;
+}
+
 /* Publication placeholder styles */
 .publication-placeholder {
   width: 100%;

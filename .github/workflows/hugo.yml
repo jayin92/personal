@@ -4,6 +4,9 @@ on:
   push:
     branches:
       - main
+  schedule:
+    - cron: '30 2 * * *'  # daily rebuild to refresh GitHub star counts (avoid :00, GitHub delays on-the-hour crons)
+  workflow_dispatch:
 
 jobs:
   deploy:
@@ -28,6 +31,8 @@ jobs:
           extended: true
 
       - name: Build
+        env:
+          HUGO_GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: hugo --gc --minify --cleanDestinationDir
       
       - name: Deploy

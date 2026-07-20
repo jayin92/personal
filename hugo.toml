@@ -55,3 +55,8 @@ googleAnalytics = "G-XFCYQ29SLK"  # add your tracking id
 
 [markup.goldmark.renderer]
   unsafe = true  # allow raw HTML in markdown files
+
+[caches]
+  [caches.getresource]
+    dir = ":cacheDir/:project"
+    maxAge = "1h"  # default is cache-forever; 1h keeps GitHub star counts fresh locally

@@ -158,7 +158,7 @@
             {{- $first = false -}}
           {{- end -}}
           {{- with .Get "code" -}}
-            {{- if not $first }} / {{ end -}}<a href="{{ . }}" target="_blank" rel="noopener noreferrer">code</a>
+            {{- if not $first }} / {{ end -}}<a href="{{ . }}" target="_blank" rel="noopener noreferrer">code{{ partial "github-stars.html" . }}</a>
             {{- $first = false -}}
           {{- end -}}
           {{- with .Get "video-link" -}}
