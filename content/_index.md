@@ -79,6 +79,8 @@ I received my B.S. in Computer Science from National Yang Ming Chiao Tung Univer
     video-link="https://youtu.be/zj2-aGSe6ao"
 >}}
 We present Skyfall-GS, a framework that synthesizes photorealistic, city-block scale 3D urban scenes from satellite imagery using diffusion models, eliminating the need for expensive 3D scanning and manual annotation while enabling real-time exploration.
+
+🎬 Featured in <a href="https://www.youtube.com/watch?v=VWdmXlRpL84" target="_blank" rel="noopener noreferrer"><em>This AI Just Fixed Google Earth's Biggest Problem</em></a> by <a href="https://bilawal.ai/" target="_blank" rel="noopener noreferrer">Bilawal Sidhu</a> — <strong>230K+ views</strong> on YouTube.
 {{< /publication-with-teaser >}}
 
 {{< publication-with-teaser
