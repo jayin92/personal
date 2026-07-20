@@ -209,9 +209,10 @@ We present BoostMVSNeRFs, a method that enhances rendering quality for MVS-based
 
 {{< publication-with-teaser
     image="/images/projects/pbr-renderer.jpg"
-    title="Physically-based Renderer"
+    title="Physically-based Renderer based on Nori 2"
     url="https://blog.jayinnn.dev/posts/eth-cg24-final-project/"
     authors="jylee,wwang"
+    equal="jylee,wwang"
     venue="Computer Graphics, ETH Zurich"
     year="2024"
     blog="https://blog.jayinnn.dev/posts/eth-cg24-final-project/"
