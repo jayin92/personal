@@ -250,7 +250,7 @@ Built a complete compiler in C++ for P, a Pascal-like language, using flex and b
 
 ## Service
 
-- **Reviewer:** ECCV, IJCV
+- **Reviewer:** ECCV 2026, SIGGRAPH Asia 2026, IJCV
 - **Teaching Assistant:** [Image and Video Generation](https://github.com/jayin92/Lab4-FlowMatching), NYCU (2025 Fall)
 
 ## Misc.
