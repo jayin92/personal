@@ -26,7 +26,7 @@ I'm a research assistant in [Computer Science](https://www.cs.nycu.edu.tw/?local
 
 I received my B.S. in Computer Science from National Yang Ming Chiao Tung University, with an exchange semester at ETH Zurich. My industry experience includes internships at Google (Pixel Camera Team), Microsoft, and Appier.
 
-**I am actively seeking research collaborations.** If you are interested in working with me, don't hesitate to reach out.
+**I am applying to PhD programs this cycle (Fall 2027 intake) and am actively seeking research collaborations.** If you are interested in working with me, don't hesitate to reach out.
 
 <div class="affiliation-logos">
   <div class="affiliation-item">
