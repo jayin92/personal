@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-label="Stylized compiler pipeline from P source to RISC-V">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0 0 L10 5 L0 10 z" fill="#f97316"/>
+    </marker>
+  </defs>
+  <rect width="800" height="600" fill="#1a1a1e"/>
+  <g font-family="SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" text-anchor="middle">
+    <!-- P source -->
+    <rect x="110" y="48" width="580" height="72" rx="10" fill="#232329" stroke="#3a3a42" stroke-width="2"/>
+    <text x="400" y="86" font-size="26" fill="#c8c8d0">prog<tspan fill="#f97316">.p</tspan>  ·  Pascal-like source</text>
+    <line x1="400" y1="120" x2="400" y2="152" stroke="#f97316" stroke-width="3" marker-end="url(#arrow)"/>
+    <!-- scanner / parser -->
+    <rect x="110" y="158" width="580" height="72" rx="10" fill="#232329" stroke="#3a3a42" stroke-width="2"/>
+    <text x="400" y="196" font-size="26" fill="#c8c8d0">scanner + parser  ·  <tspan fill="#9a9aa5">flex / bison</tspan></text>
+    <line x1="400" y1="230" x2="400" y2="262" stroke="#f97316" stroke-width="3" marker-end="url(#arrow)"/>
+    <!-- AST -->
+    <rect x="110" y="268" width="580" height="72" rx="10" fill="#232329" stroke="#3a3a42" stroke-width="2"/>
+    <text x="400" y="306" font-size="26" fill="#c8c8d0">AST construction</text>
+    <line x1="400" y1="340" x2="400" y2="372" stroke="#f97316" stroke-width="3" marker-end="url(#arrow)"/>
+    <!-- semantic analysis -->
+    <rect x="110" y="378" width="580" height="72" rx="10" fill="#232329" stroke="#3a3a42" stroke-width="2"/>
+    <text x="400" y="416" font-size="26" fill="#c8c8d0">semantic analysis  ·  <tspan fill="#9a9aa5">symbol tables</tspan></text>
+    <line x1="400" y1="450" x2="400" y2="482" stroke="#f97316" stroke-width="3" marker-end="url(#arrow)"/>
+    <!-- codegen -->
+    <rect x="110" y="488" width="580" height="72" rx="10" fill="#2b2313" stroke="#f97316" stroke-width="2"/>
+    <text x="400" y="526" font-size="26" fill="#f97316">RISC-V codegen  ·  <tspan fill="#c8c8d0">Spike</tspan></text>
+  </g>
+</svg>
