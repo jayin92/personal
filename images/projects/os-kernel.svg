@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-label="Stylized boot log of a bare-metal Raspberry Pi kernel">
+  <rect width="800" height="600" fill="#1a1a1e"/>
+  <!-- terminal window -->
+  <rect x="56" y="64" width="688" height="472" rx="14" fill="#232329" stroke="#3a3a42" stroke-width="2"/>
+  <!-- title bar -->
+  <path d="M56 78 a14 14 0 0 1 14 -14 h660 a14 14 0 0 1 14 14 v40 h-688 z" fill="#2b2b33"/>
+  <circle cx="92" cy="91" r="8" fill="#ff5f57"/>
+  <circle cx="118" cy="91" r="8" fill="#febc2e"/>
+  <circle cx="144" cy="91" r="8" fill="#28c840"/>
+  <text x="400" y="99" font-family="SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="21" fill="#9a9aa5" text-anchor="middle">kernel8.img — uart0</text>
+  <!-- boot log -->
+  <g font-family="SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="24" fill="#c8c8d0">
+    <text x="96" y="170"><tspan fill="#f97316">&gt;</tspan> uart bootloader <tspan fill="#28c840">… ok</tspan></text>
+    <text x="96" y="214"><tspan fill="#f97316">&gt;</tspan> device tree parsed <tspan fill="#28c840">… ok</tspan></text>
+    <text x="96" y="258"><tspan fill="#f97316">&gt;</tspan> exceptions + irq <tspan fill="#28c840">… ok</tspan></text>
+    <text x="96" y="302"><tspan fill="#f97316">&gt;</tspan> buddy allocator <tspan fill="#28c840">… ok</tspan></text>
+    <text x="96" y="346"><tspan fill="#f97316">&gt;</tspan> threads + syscalls <tspan fill="#28c840">… ok</tspan></text>
+    <text x="96" y="390"><tspan fill="#f97316">&gt;</tspan> virtual memory <tspan fill="#28c840">… ok</tspan></text>
+    <text x="96" y="434"><tspan fill="#f97316">&gt;</tspan> vfs: tmpfs initramfs <tspan fill="#28c840">… ok</tspan></text>
+  </g>
+  <rect x="96" y="458" width="24" height="32" fill="#f97316"/>
+  <text x="744" y="578" font-family="SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace" font-size="21" fill="#6b6b75" text-anchor="end">Raspberry Pi 3B+ · AArch64</text>
+</svg>
