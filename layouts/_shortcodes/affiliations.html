@@ -1,0 +1,15 @@
+{{- /* Logo row, from `affiliations` in the page's front matter. */ -}}
+<div class="affiliations">
+  {{- range .Page.Params.affiliations }}
+  <div class="affiliation">
+    {{- with resources.Get .logo }}
+    {{- $l := .Fit "240x120 png" }}
+    <div class="affiliation-logo{{ if gt (div (float .Width) .Height) 2.0 }} affiliation-logo--wide{{ end }}"><img src="{{ $l.RelPermalink }}" width="{{ div $l.Width 2 }}" height="{{ div $l.Height 2 }}" alt="" loading="lazy"></div>
+    {{- end }}
+    <strong>{{ .name }}</strong>
+    {{- range .titles }}
+    <span class="affiliation-role">{{ . }}</span>
+    {{- end }}
+  </div>
+  {{- end }}
+</div>

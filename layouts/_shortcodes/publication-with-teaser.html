@@ -1,0 +1,128 @@
+{{- /*
+  A publication or project: teaser on the left, text on the right.
+
+  Parameters (all as in content/_index.md):
+    image          teaser still, e.g. "/images/publications/x.jpg" (the file lives under assets/); shown as a centre-cropped square
+    video          optional: an .mp4 under static/ that plays on hover, or a second still to swap in
+    hoverImage     optional: second still to swap in (same as passing an image to `video`)
+    hover-labels   optional: two labels for the stills, e.g. "Input,Output"
+    title, url     required
+    authors        comma-separated ids from data/authors.yaml
+    equal          ids marked *        corresponding   ids marked †
+    note           text after the author list, e.g. "(*Equal Contribution)"
+    venue, year    required; venue-short is optional
+    project, blog, report, slides, arxiv, pdf, code, video-link, demo   optional links
+  The body is the abstract (Markdown).
+*/ -}}
+{{- $title := .Get "title" -}}
+{{- $people := hugo.Data.authors.authors -}}
+{{- $ids := partial "ids.html" (.Get "authors") -}}
+{{- $equal := partial "ids.html" (.Get "equal") -}}
+{{- $corresponding := partial "ids.html" (.Get "corresponding") -}}
+
+{{- /* ---- Teaser: cropped square from the centre (CSS shows it 16:9 on phones). ---- */ -}}
+{{- $src := .Get "image" -}}
+{{- $res := resources.Get (strings.TrimPrefix "/" $src) -}}
+{{- if not $res }}{{ errorf "publication-with-teaser: image %q not found. Teaser images live under assets/ (expected assets%s)" $src $src }}{{ end -}}
+{{- $isSVG := eq $res.MediaType.SubType "svg" -}}
+{{- $spec := "" -}}
+{{- $still := $res -}}
+{{- if not $isSVG -}}
+  {{- $side := int (math.Min 480 (math.Min $res.Width $res.Height)) -}}
+  {{- $spec = printf "%dx%d Center webp" $side $side -}}
+  {{- $still = $res.Fill $spec -}}
+{{- end -}}
+{{- /* Phones show a 16:9 crop of the original, not of the square. */ -}}
+{{- $wideSpec := "" -}}
+{{- $wide := false -}}
+{{- if not $isSVG -}}
+  {{- $w := math.Min 720 $res.Width -}}
+  {{- $h := math.Round (div (mul $w 9) 16) -}}
+  {{- if gt $h $res.Height }}{{ $h = float $res.Height }}{{ $w = math.Round (div (mul $h 16) 9) }}{{ end -}}
+  {{- $wideSpec = printf "%dx%d Center webp" (int $w) (int $h) -}}
+  {{- $wide = $res.Fill $wideSpec -}}
+{{- end -}}
+
+{{- $hover := .Get "video" | default (.Get "hoverImage") -}}
+{{- $hoverIsImage := and $hover (findRE `(?i)\.(jpe?g|png|gif|webp)$` $hover) -}}
+
+<article class="entry">
+  <div class="entry-media">
+    <div class="media{{ if $isSVG }} media--diagram{{ end }}"{{ if $hover }} data-media="{{ if $hoverIsImage }}swap{{ else }}video{{ end }}"{{ end }}>
+      <picture>
+        {{- with $wide }}<source media="(max-width: 40rem)" srcset="{{ .RelPermalink }}">{{ end }}
+        <img src="{{ $still.RelPermalink }}"{{ if not $isSVG }} width="{{ $still.Width }}" height="{{ $still.Height }}"{{ end }} alt="{{ $title }} teaser" loading="lazy" decoding="async">
+      </picture>
+      {{- if $hoverIsImage }}
+      {{- $second := resources.Get (strings.TrimPrefix "/" $hover) }}
+      {{- if not $second }}{{ errorf "publication-with-teaser: hover image %q not found under assets/" $hover }}{{ end }}
+      <picture class="media-top">
+        <source media="(max-width: 40rem)" srcset="{{ ($second.Fill $wideSpec).RelPermalink }}">
+        {{- $second = $second.Fill $spec }}
+        <img src="{{ $second.RelPermalink }}" width="{{ $second.Width }}" height="{{ $second.Height }}" alt="" loading="lazy" decoding="async">
+      </picture>
+      {{- with .Get "hover-labels" }}
+      {{- $pair := split . "," }}
+      <span class="media-label media-label--a" aria-hidden="true">{{ trim (index $pair 0) " " }}</span>
+      <span class="media-label media-label--b" aria-hidden="true">{{ trim (index $pair 1) " " }}</span>
+      {{- else }}
+      <span class="media-hint" aria-hidden="true"></span>
+      {{- end }}
+      {{- else if $hover }}
+      <video class="media-top" src="{{ $hover }}" muted loop playsinline preload="none" aria-hidden="true" tabindex="-1"></video>
+      <span class="media-hint" aria-hidden="true"></span>
+      {{- end }}
+    </div>
+  </div>
+  <div class="entry-text">
+  {{- if and (.Get "url") $title (.Get "venue") (.Get "year") }}
+  <div class="entry-head">
+    <h3 class="entry-title"><a href="{{ .Get "url" }}" target="_blank" rel="noopener noreferrer">{{ $title }}</a></h3>
+    {{- with $ids }}
+    <p class="entry-authors">
+      {{- range $i, $id := . }}
+        {{- if $i }}, {{ end }}
+        {{- $a := index (where $people "id" $id) 0 }}
+        {{- if not $a }}{{ errorf "publication-with-teaser: unknown author id %q in %q (add it to data/authors.yaml)" $id $title }}{{ end }}
+        {{- if $a.highlight }}<strong>{{ $a.name }}</strong>
+        {{- else if $a.url }}<a href="{{ $a.url }}" target="_blank" rel="noopener noreferrer">{{ $a.name }}</a>
+        {{- else }}{{ $a.name }}{{ end }}
+        {{- if in $equal $id }}*{{ end }}
+        {{- if in $corresponding $id }}†{{ end }}
+      {{- end }}
+      {{- if or $equal $corresponding }} <span class="entry-note">{{ $.Get "note" | default "(*Equal Contribution)" }}</span>{{ end -}}
+    </p>
+    {{- end }}
+    <p class="entry-meta">
+      <span class="venue">{{ .Get "venue" }}{{ with .Get "venue-short" }} ({{ . }}){{ end }}, {{ .Get "year" }}</span>
+      {{- $links := slice
+        (dict "key" "project" "label" "project page")
+        (dict "key" "blog" "label" "blog post")
+        (dict "key" "report" "label" "report")
+        (dict "key" "slides" "label" "slides")
+        (dict "key" "arxiv" "label" "arXiv")
+        (dict "key" "pdf" "label" "pdf")
+        (dict "key" "code" "label" "code")
+        (dict "key" "video-link" "label" "video")
+        (dict "key" "demo" "label" "demo") }}
+      {{- $first := true }}
+      <span class="entry-links">
+        {{- range $links }}
+          {{- $key := .key }}
+          {{- $label := .label }}
+          {{- with $.Get $key }}
+            {{- if not $first }} / {{ end }}{{ $first = false -}}
+            <a href="{{ . }}" target="_blank" rel="noopener noreferrer">{{ $label }}{{ if eq $key "code" }}{{ partial "github-stars.html" . }}{{ end }}</a>
+          {{- end }}
+        {{- end -}}
+      </span>
+    </p>
+  </div>
+  {{- with .Inner }}
+  <div class="entry-abstract">{{ . | markdownify }}</div>
+  {{- end }}
+  {{- else }}
+  <div class="entry-head">{{ .Inner | markdownify }}</div>
+  {{- end }}
+  </div>
+</article>

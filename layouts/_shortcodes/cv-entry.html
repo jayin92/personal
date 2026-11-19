@@ -1,0 +1,17 @@
+{{- /*
+  One dated row for the Experience and Education sections.
+
+    org    organisation, shown in bold
+    role   position or degree, shown in italic after the organisation
+    date   shown in the left column, e.g. "Sep. 2025 – Present"
+  The body (Markdown) is the description; it may be empty.
+*/ -}}
+<div class="cv-entry">
+  <div class="cv-date">{{ .Get "date" }}</div>
+  <div class="cv-body">
+    <p class="cv-head"><strong>{{ .Get "org" }}</strong>{{ with .Get "role" }} – <em>{{ . }}</em>{{ end }}</p>
+    {{- with strings.TrimSpace .Inner }}
+    <div class="cv-detail">{{ . | markdownify }}</div>
+    {{- end }}
+  </div>
+</div>

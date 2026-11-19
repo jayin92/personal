@@ -1,60 +1,25 @@
-title = "Jie-Ying Lee 李杰穎"
 baseURL = "https://jayinnn.dev/"
-theme = "researcher"
-disableKinds = ["taxonomy", "term"]
-enableEmoji = true
-math = false          # enable KaTeX (https://katex.org/) globally
-googleAnalytics = "G-XFCYQ29SLK"  # add your tracking id
+title = "Jie-Ying Lee 李杰穎"
+locale = "en"
+disableKinds = ["taxonomy", "term", "rss", "section"]
 
 [params]
   author = "Jie-Ying Lee 李杰穎"
   description = "Jie-Ying Lee's personal website"
-  favicon = "favicon.ico"  # path to a .ico to use as favicon
-  logo = ""  # url or path to a logo to put in the header
   [params.footer]
     text = "By Jie-Ying Lee 李杰穎"
-    url = "https://jayinnn.dev/"
-  [params.style]  # appearance options (can be omitted)
-    fontFamily = "'Lato', 'Noto Sans TC', sans-serif"
-    fontSize = "12pt"
-    pageWidth = "900px"
-    avatarSize = "180px"
-    colorBlack = "#222222"
-    colorRed = "#f97316"
-  [[params.socialIcons]]
-    icon = "fab fa-facebook"
-    title = "Facebook"
-    url = "https://fb.me/jayinnn/"
-  [[params.socialIcons]]
-    icon = "fab fa-github"
-    title = "GitHub"
-    url = "https://github.com/jayin92/"
-  [[params.socialIcons]]
-    icon = "fab fa-linkedin"
-    title = "LinkedIn"
-    url = "https://www.linkedin.com/in/jayinnn/"
-  [[params.socialIcons]]
-    icon = "fas fa-envelope"
-    title = "E-mail"
-    url = "mailto:jayinnn.cs14@nycu.edu.tw"
-  [[params.socialIcons]]
-    icon = "ai ai-google-scholar"
-    title = "Scholar"
-    url = "https://scholar.google.com/citations?user=mKB6voEAAAAJ"
-  [[params.socialIcons]]
-    icon = "fab fa-x-twitter"
-    title = "X"
-    url = "https://x.com/jayinnn"
-  [[params.socialIcons]]
-    icon = "fab fa-threads"
-    title = "Threads"
-    url = "https://threads.com/@jayinnn"
 
-[permalinks]
-  "/" = "/:filename"
+[services.googleAnalytics]
+  id = "G-XFCYQ29SLK"
 
 [markup.goldmark.renderer]
-  unsafe = true  # allow raw HTML in markdown files
+  unsafe = true  # allow raw HTML in content/_index.md
+
+[imaging]
+  resampleFilter = "Lanczos"
+  anchor = "Center"  # crop from the middle, matching how the hover videos are shown
+  [imaging.webp]
+    quality = 82
 
 [caches]
   [caches.getresource]

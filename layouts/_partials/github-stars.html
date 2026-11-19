@@ -1,0 +1,31 @@
+{{- /* Star count for a github.com repo URL, fetched at build time. Renders nothing on any failure. */ -}}
+{{- $url := strings.TrimSuffix ".git" (strings.TrimSuffix "/" (trim . " ")) -}}
+{{- $parts := split (strings.TrimPrefix "https://github.com/" $url) "/" -}}
+{{- if and (hasPrefix $url "https://github.com/") (eq (len $parts) 2) -}}
+  {{- $api := printf "https://api.github.com/repos/%s/%s" (index $parts 0) (index $parts 1) -}}
+  {{- $headers := dict "User-Agent" "jayinnn.dev-hugo-build" "Accept" "application/vnd.github+json" -}}
+  {{- with os.Getenv "HUGO_GITHUB_TOKEN" -}}
+    {{- $headers = merge $headers (dict "Authorization" (printf "Bearer %s" .)) -}}
+  {{- end -}}
+  {{- with try (resources.GetRemote $api (dict "headers" $headers)) -}}
+    {{- with .Err -}}
+      {{- warnf "github-stars: %s: %s" $api . -}}
+    {{- else with .Value -}}
+      {{- $data := dict -}}
+      {{- with try (transform.Unmarshal .Content) -}}
+        {{- if and (not .Err) (reflect.IsMap .Value) }}{{ $data = .Value }}{{ else }}{{ warnf "github-stars: unexpected response from %s" $api }}{{ end -}}
+      {{- end -}}
+      {{- with $data.stargazers_count -}}
+        {{- /* JSON numbers unmarshal as float64; printf "%d" on them breaks */ -}}
+        {{- $n := int . -}}
+        {{- $count := printf "%d" $n -}}
+        {{- if ge $n 1000 -}}
+          {{- $count = replace (printf "%.1fk" (div (float $n) 1000)) ".0k" "k" -}}
+        {{- end -}}
+        <span class="gh-stars">&#9733;&nbsp;{{ $count }}</span>
+      {{- end -}}
+    {{- else -}}
+      {{- warnf "github-stars: no response for %s" $api -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}

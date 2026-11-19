@@ -1,0 +1,24 @@
+{{ define "main" }}
+<header class="intro">
+  {{- with resources.Get .Params.avatar }}
+  {{- $a := .Fill "320x320 webp q85" }}
+  <img class="avatar" src="{{ $a.RelPermalink }}" width="160" height="160" alt="{{ $.Params.name }}">
+  {{- end }}
+  <div class="intro-name">
+    <h1>{{ .Params.name }} <span class="name-zh" lang="zh-Hant">{{ .Params.name_zh }}</span></h1>
+    <p class="roles">{{ delimit .Params.roles "<br>" | safeHTML }}</p>
+  </div>
+  <p class="email">Email: <a href="mailto:{{ .Params.email }}">{{ .Params.email }}</a></p>
+  <p class="links">
+    {{- range $i, $l := .Params.links }}{{ if $i }} / {{ end }}<a href="{{ $l.url }}" target="_blank" rel="noopener noreferrer">{{ $l.label }}</a>{{ end -}}
+  </p>
+</header>
+
+{{- with .Params.interests }}
+<p class="interests"><strong>Research interests:</strong> {{ . }}</p>
+{{- end }}
+
+<div class="prose">
+{{ .Content }}
+</div>
+{{ end }}

@@ -1,65 +1,57 @@
 +++
 title = "Jie-Ying Lee 李杰穎"
+name = "Jie-Ying Lee"
+name_zh = "李杰穎"
+avatar = "images/avatar.png"
+roles = ["Student Researcher @ NYCU CS", "Software Engineer @ Google Pixel Camera"]
+email = "jieying.lee.jay@gmail.com"
+interests = "Robot learning, 3D vision, multimodal sensing, hierarchical VLM–policy systems (agentic robotics)."
+
+[[links]]
+  label = "CV"
+  url = "https://mozilla.github.io/pdf.js/web/viewer.html?file=https://raw.githubusercontent.com/jayin92/CV/main/cv.pdf"
+[[links]]
+  label = "Scholar"
+  url = "https://scholar.google.com/citations?view_op=list_works&hl=zh-TW&user=mKB6voEAAAAJ"
+[[links]]
+  label = "LinkedIn"
+  url = "https://www.linkedin.com/in/jayinnn/"
+[[links]]
+  label = "GitHub"
+  url = "http://github.com/jayin92"
+[[links]]
+  label = "X"
+  url = "https://x.com/jayinnn"
+[[links]]
+  label = "Threads"
+  url = "https://threads.com/@jayinnn"
+[[links]]
+  label = "Blog"
+  url = "https://blog.jayinnn.dev/"
+
+[[affiliations]]
+  name = "Google"
+  logo = "images/logos/google.png"
+  titles = ["SWE (2025 - Present)"]
+[[affiliations]]
+  name = "NYCU"
+  logo = "images/logos/nycu.png"
+  titles = ["Ph.D. Student (2025 - Present)", "Student Researcher (2023 - Present)", "B.S in Computer Science (2021 - 2025)"]
+[[affiliations]]
+  name = "ETH Zurich"
+  logo = "images/logos/eth.png"
+  titles = ["Exchange Student (2024 - 2025)"]
 +++
 
-<div class="header-section">
-<div class="header-text">
+I'm a student researcher in [Computer Science](https://www.cs.nycu.edu.tw/?locale=en) at National Yang Ming Chiao Tung University, working with [Prof. Yu-Lun Liu](https://yulunalexliu.github.io/), and a Software Engineer on Google's Pixel Camera Team.
 
-<span class="large-name">Jie-Ying Lee 李杰穎</span>
-
-Research Assistant @ NYCU CS  
-Software Engineer @ Google Pixel Camera
-
-Email: [jayinnn.cs14@nycu.edu.tw](mailto:jayinnn.cs14@nycu.edu.tw)
-
-[CV](https://mozilla.github.io/pdf.js/web/viewer.html?file=https://raw.githubusercontent.com/jayin92/CV/main/cv.pdf) / [Scholar](https://scholar.google.com/citations?view_op=list_works&hl=zh-TW&user=mKB6voEAAAAJ) / [LinkedIn](https://www.linkedin.com/in/jayinnn/) / [GitHub](http://github.com/jayin92) / [X](https://x.com/jayinnn) / [Threads](https://threads.com/@jayinnn) / [Blog](https://blog.jayinnn.dev/)
-
-</div>
-{{< figure class="avatar" src="/avatar.png" alt="avatar">}}
-</div>
-
-## About Me
-
-<div class="intro-box">
-
-I'm a research assistant in [Computer Science](https://www.cs.nycu.edu.tw/?locale=en) at National Yang Ming Chiao Tung University, working with [Prof. Yu-Lun Liu](https://yulunalexliu.github.io/), and a Software Engineer on Google's Pixel Camera Team. I work on **3D scene synthesis**, **generative models for vision**, and **embodied AI**, particularly focusing on **Neural Radiance Fields**, **3D Gaussian Splatting**, **vision-language navigation**, and **on-device perception**.
+Robot policies trained with human data are strong, but they are limited by what humans can demonstrate. I want to study how robots can learn to use a new sensor on their own. Once robots can do this, they can complete tasks no human can. The core thesis I want to pursue in my PhD is what I call **self-onboarding**: “How can a robot in the real world teach itself to leverage signals from any new sensor, without new human demonstrations or hand-designed mechanisms?”
 
 I received my B.S. in Computer Science from National Yang Ming Chiao Tung University, with an exchange semester at ETH Zurich. My industry experience includes internships at Google (Pixel Camera Team), Microsoft, and Appier.
 
 **I am applying to PhD programs this cycle (Fall 2027 intake) and am actively seeking research collaborations.** If you are interested in working with me, don't hesitate to reach out.
 
-<div class="affiliation-logos">
-  <div class="affiliation-item">
-    <img src="/google.png" alt="Google" />
-    <span class="affiliation-name">Google</span>
-    <span class="affiliation-title">SWE (2025 - Present)</span>
-  </div>
-  <div class="affiliation-item">
-    <img src="/nycu.png" alt="NYCU" />
-    <span class="affiliation-name">NYCU</span>
-    <span class="affiliation-title">Research Assistant (2025 - Present)</span>
-    <span class="affiliation-title">B.S in Computer Science (2021 - 2025)</span>
-  </div>
-  <div class="affiliation-item">
-    <img src="/eth.png" alt="ETH Zurich" />
-    <span class="affiliation-name">ETH Zurich</span>
-    <span class="affiliation-title">Exchange Student (2024 - 2025)</span>
-  </div>
-</div>
-</div>
-
-## News
-
-- **Jun. 2026:** [Skyfall-GS](https://skyfall-gs.jayinnn.dev/) accepted to **ECCV 2026**
-- **Feb. 2026:** [Pantheon360](https://koi953215.github.io/pantheon360_page/) accepted to **CVPR 2026**
-- **Sep. 2025:** Joined [Google](https://about.google/) as a Software Engineer on the Pixel Camera Team and joined NYCU as a research assistant, working with [Prof. Yu-Lun Liu](https://yulunalexliu.github.io/)
-- **Jul. 2025:** [See, Point, Fly](https://spf-web.pages.dev/) accepted to **CoRL 2025**
-- **Jun. 2025:** [LightsOut](https://ray-1026.github.io/lightsout/) accepted to **ICCV 2025**
-- **Mar. 2025:** Two papers accepted to **CVPR 2025**: [AuraFusion360](https://kkennethwu.github.io/aurafusion360/) and [SpectroMotion](https://cdfan0627.github.io/spectromotion/)
-- **Sep. 2024:** Exchange semester at ETH Zurich, D-INFK ([blog post](https://blog.jayinnn.dev/posts/eth/))
-- **Jul. 2024:** BEVGaussian won [NYCU CS Undergraduate Research Competition (3rd place)](https://www.cs.nycu.edu.tw/storage/materials/xeXTWKdsG4IkteKZGx3lxO6WdeZv4Qi0mgaomFJr.pdf)
-- **Jun. 2024:** Awarded [NSTC Research Grant for University Students](https://www.nstc.gov.tw/folksonomy/list/2af9ad9a-1f47-450d-b5a1-2cb43de8290c?l=ch)
-- **May 2024:** [BoostMVSNeRFs](https://su-terry.github.io/BoostMVSNeRFs/) accepted to **SIGGRAPH 2024**
+{{< affiliations >}}
 
 ## Publications
 
@@ -78,9 +70,27 @@ I received my B.S. in Computer Science from National Yang Ming Chiao Tung Univer
     pdf="https://arxiv.org/pdf/2510.15869"
     video-link="https://youtu.be/zj2-aGSe6ao"
 >}}
-We present Skyfall-GS, a framework that synthesizes photorealistic, city-block scale 3D urban scenes from satellite imagery using diffusion models, eliminating the need for expensive 3D scanning and manual annotation while enabling real-time exploration.
+Satellite images and a pretrained diffusion model are enough to build city-block scale 3D scenes you can fly through in real time.
 
 🎬 Featured in <a href="https://www.youtube.com/watch?v=VWdmXlRpL84" target="_blank" rel="noopener noreferrer"><em>This AI Just Fixed Google Earth's Biggest Problem</em></a> by <a href="https://bilawal.ai/" target="_blank" rel="noopener noreferrer">Bilawal Sidhu</a> — <strong>230K+ views</strong> on YouTube.
+{{< /publication-with-teaser >}}
+
+{{< publication-with-teaser
+    image="/images/publications/boostmvsnerfs-teaser.jpg"
+    video="/videos/publications/boostmvsnerfs-teaser.mp4"
+    title="BoostMVSNeRFs: Boosting MVS-based NeRFs to Generalizable View Synthesis in Large-scale Scenes"
+    url="https://su-terry.github.io/BoostMVSNeRFs/"
+    authors="chsu,cyhu,srtsai,jylee,cylin,ylliu"
+    equal="chsu,cyhu,srtsai,jylee"
+    note="(*Equal Contribution)"
+    venue="SIGGRAPH"
+    year="2024"
+    project="https://su-terry.github.io/BoostMVSNeRFs/"
+    arxiv="https://arxiv.org/abs/2407.15848"
+    code="https://github.com/Su-Terry/BoostMVSNeRFs"
+    video-link="https://www.youtube.com/watch?v=tX4EkFgm0ng"
+>}}
+Combining multiple cost volumes lets MVS-based NeRFs render large-scale scenes with wider coverage and fewer artifacts.
 {{< /publication-with-teaser >}}
 
 {{< publication-with-teaser
@@ -99,7 +109,22 @@ We present Skyfall-GS, a framework that synthesizes photorealistic, city-block s
     code="https://github.com/shigon255/BRDFusion"
     pdf="https://arxiv.org/pdf/2606.17049"
 >}}
-We present BRDFusion, an inverse rendering framework for urban scenes that unifies physics-based rendering with generative diffusion priors to recover explicit material and lighting properties from video, enabling high-quality relighting and simulation.
+Physics-based rendering plus diffusion priors lets you pull materials and lighting out of an urban video, so you can relight it.
+{{< /publication-with-teaser >}}
+
+{{< publication-with-teaser
+    image="/images/publications/yocausal-teaser.jpg"
+    title="YoCausal: How Far is Video Generation from World Model? A Causality Perspective"
+    url="https://www.youzhexie.me/papers/YoCausal/index.html"
+    authors="yzxie,yhli,jylee,kpzhang,ylliu,zxwang"
+    venue="arXiv"
+    venue-short=""
+    year="2026"
+    project="https://www.youzhexie.me/papers/YoCausal/index.html"
+    arxiv="https://arxiv.org/abs/2605.30346"
+    code="https://github.com/youzhe0305/YoCausal"
+>}}
+Playing real videos backwards is a free way to test whether video models understand cause and effect.
 {{< /publication-with-teaser >}}
 
 {{< publication-with-teaser
@@ -117,24 +142,7 @@ We present BRDFusion, an inverse rendering framework for urban scenes that unifi
     project="https://koi953215.github.io/pantheon360_page/"
     arxiv="https://arxiv.org/abs/2605.25449"
 >}}
-We present Pantheon360, a controllable 360° video diffusion framework for digital twin generation that synthesizes high-fidelity videos from sparse 360° inputs, letting the diffusion model focus on photorealistic texture refinement while a 3D Cache enforces global geometric consistency.
-{{< /publication-with-teaser >}}
-
-{{< publication-with-teaser
-    image="/images/publications/lightsout-teaser-input.jpg"
-    video="/images/publications/lightsout-teaser-output.jpg"
-    title="LightsOut: Diffusion-based Outpainting for Enhanced Lens Flare Removal"
-    url="https://ray-1026.github.io/lightsout/"
-    authors="srtsai,wcchang,jylee,chsu,ylliu"
-    venue="ICCV"
-    year="2025"
-    project="https://ray-1026.github.io/lightsout/"
-    arxiv="https://arxiv.org/abs/2510.15868"
-    code="https://github.com/Ray-1026/LightsOut-official"
-    video-link="https://youtu.be/VNzJ9Z_dJNI"
-    demo="https://huggingface.co/spaces/RayTsai-030/LightsOut-demo"
->}}
-We present LightsOut, a diffusion-based outpainting framework that enhances lens flare removal by reconstructing off-frame light sources. Our approach combines a multitask regression module with LoRA fine-tuned diffusion models to produce realistic and physically consistent results.
+Caching the scene in 3D keeps 360° video diffusion geometrically consistent, so the model can focus on making digital twins look real.
 {{< /publication-with-teaser >}}
 
 {{< publication-with-teaser
@@ -152,7 +160,25 @@ We present LightsOut, a diffusion-based outpainting framework that enhances lens
     code="https://github.com/Hu-chih-yao/see-point-fly"
     video-link="https://youtu.be/EQPBkNhAuyU"
 >}}
-We present See, Point, Fly (SPF), a training-free framework for aerial vision-and-language navigation. By leveraging vision-language models and reformulating navigation as a 2D spatial grounding task, SPF enables universal unmanned aerial navigation without task-specific training.
+Treating navigation as pointing at a spot in the image lets an off-the-shelf VLM fly a drone, with no training.
+{{< /publication-with-teaser >}}
+
+{{< publication-with-teaser
+    image="/images/publications/lightsout-teaser-input.jpg"
+    video="/images/publications/lightsout-teaser-output.jpg"
+    hover-labels="Input,Output"
+    title="LightsOut: Diffusion-based Outpainting for Enhanced Lens Flare Removal"
+    url="https://ray-1026.github.io/lightsout/"
+    authors="srtsai,wcchang,jylee,chsu,ylliu"
+    venue="ICCV"
+    year="2025"
+    project="https://ray-1026.github.io/lightsout/"
+    arxiv="https://arxiv.org/abs/2510.15868"
+    code="https://github.com/Ray-1026/LightsOut-official"
+    video-link="https://youtu.be/VNzJ9Z_dJNI"
+    demo="https://huggingface.co/spaces/RayTsai-030/LightsOut-demo"
+>}}
+Lens flare is easier to remove once you outpaint the light source that caused it, even when it is outside the frame.
 {{< /publication-with-teaser >}}
 
 {{< publication-with-teaser
@@ -170,7 +196,7 @@ We present See, Point, Fly (SPF), a training-free framework for aerial vision-an
     code="https://github.com/kkennethwu/AuraFusion360_official.git"
     video-link="https://www.youtube.com/watch?v=V1_EMXtYhTE"
 >}}
-We introduce AuraFusion360, a reference-based 360° scene inpainting method with three key innovations: depth-aware occlusion identification, Adaptive Guided Depth Diffusion for zero-shot point placement, and SDEdit-based enhancement for multi-view coherence.
+Reasoning about depth and occlusion lets a single reference image fill in a 360° scene consistently from every view.
 {{< /publication-with-teaser >}}
 
 {{< publication-with-teaser
@@ -186,25 +212,7 @@ We introduce AuraFusion360, a reference-based 360° scene inpainting method with
     code="https://github.com/cdfan0627/SpectroMotion"
     video-link="https://www.youtube.com/watch?v=yqKLUDIdN9g"
 >}}
-We present SpectroMotion, the first 3D Gaussian Splatting method capable of reconstructing photorealistic dynamic specular scenes. By combining 3DGS with physically-based rendering and deformation fields, we achieve high-quality synthesis of challenging real-world dynamic reflective surfaces.
-{{< /publication-with-teaser >}}
-
-{{< publication-with-teaser
-    image="/images/publications/boostmvsnerfs-teaser.jpg"
-    video="/videos/publications/boostmvsnerfs-teaser.mp4"
-    title="BoostMVSNeRFs: Boosting MVS-based NeRFs to Generalizable View Synthesis in Large-scale Scenes"
-    url="https://su-terry.github.io/BoostMVSNeRFs/"
-    authors="chsu,cyhu,srtsai,jylee,cylin,ylliu"
-    equal="chsu,cyhu,srtsai,jylee"
-    note="(*Equal Contribution)"
-    venue="SIGGRAPH"
-    year="2024"
-    project="https://su-terry.github.io/BoostMVSNeRFs/"
-    arxiv="https://arxiv.org/abs/2407.15848"
-    code="https://github.com/Su-Terry/BoostMVSNeRFs"
-    video-link="https://www.youtube.com/watch?v=tX4EkFgm0ng"
->}}
-We present BoostMVSNeRFs, a method that enhances rendering quality for MVS-based NeRFs in large-scale scenes. Our approach addresses key limitations including restricted viewport coverage and artifacts from limited input views, enabling generalizable view synthesis in complex environments.
+Adding physically-based shading and deformation to Gaussian splats lets you reconstruct shiny objects that move.
 {{< /publication-with-teaser >}}
 
 ## Projects
@@ -221,7 +229,7 @@ We present BoostMVSNeRFs, a method that enhances rendering quality for MVS-based
     report="https://blog.jayinnn.dev/eth-cg24/project/"
     slides="https://blog.jayinnn.dev/eth-cg24/rendering-competition-slides.pdf"
 >}}
-Built a complete physically-based renderer in C++ on top of the Nori 2 educational framework: path tracing with multiple importance sampling, Disney BSDF, image and procedural textures, a realistic camera model, and Intel Open Image Denoise integration. Our competition entry *In Between* — a dawn view from a waterfall cave inspired by Seljalandsfoss, Iceland — renders the clouds and waterfall mist as heterogeneous participating media from NanoVDB volumes, combining equiangular sampling with the Henyey-Greenstein phase function under environment-map lighting. Selected as a finalist of the course rendering competition.
+Built a complete physically-based renderer in C++ on top of the Nori 2 educational framework. Selected as a finalist of the course rendering competition.
 {{< /publication-with-teaser >}}
 
 {{< publication-with-teaser
@@ -233,7 +241,7 @@ Built a complete physically-based renderer in C++ on top of the Nori 2 education
     year="2024"
     code="https://github.com/jayin92/osc2024/tree/110550088"
 >}}
-Implemented a bare-metal OS kernel in C and assembly for Raspberry Pi 3B+ (ARMv8-A, AArch64) across eight labs: UART shell and mailbox interface, a self-hosted UART bootloader with device tree parsing, exception and interrupt handling, a buddy-system memory allocator, threads and user processes with system calls and signals, virtual memory, and a virtual file system with tmpfs, initramfs, and device file systems.
+Implemented a bare-metal OS kernel in C and assembly for Raspberry Pi 3B+ (ARMv8-A, AArch64) across eight labs.
 {{< /publication-with-teaser >}}
 
 {{< publication-with-teaser
@@ -245,12 +253,62 @@ Implemented a bare-metal OS kernel in C and assembly for Raspberry Pi 3B+ (ARMv8
     year="2024"
     code="https://github.com/jayin92/NYCU-intro-to-compiler"
 >}}
-Built a complete compiler in C++ for P, a Pascal-like language, using flex and bison: scanner, parser, AST construction, semantic analysis with symbol tables, and RISC-V code generation executed on the Spike simulator.
+Built a complete compiler in C++ for P, a Pascal-like language, using flex and bison.
 {{< /publication-with-teaser >}}
+
+## Experience
+
+{{< cv-entry org="CompPhoto Lab, NYCU" role="Student Researcher (part-time since Sep. 2025)" date="Aug. 2023 – Present" >}}
+Advised by [Prof. Yu-Lun Liu](https://yulunalexliu.github.io/), working on 3D scene synthesis, generative models for vision, and embodied AI. First author of Skyfall-GS (ECCV 2026); co-first author of BoostMVSNeRFs (SIGGRAPH 2024). Also contributed to work on video diffusion, scene inpainting, dynamic reconstruction, lens-flare removal, and VLM-based aerial navigation (CVPR, ICCV, CoRL), plus inverse rendering and video generation under review.
+{{< /cv-entry >}}
+
+{{< cv-entry org="Google" role="Software Engineer, Pixel Camera Team (full-time)" date="Sep. 2025 – Present" >}}
+Software Engineer III since Nov. 2026; Software Engineer II, Sep. 2025 – Nov. 2026
+
+- Building on-device perception for computational photography.
+- Mentored an intern on real-time camera composition control driven by VLM-generated state machines.
+{{< /cv-entry >}}
+
+{{< cv-entry org="Google" role="Software Engineering Intern, Pixel Camera Team" date="Jun. 2024 – Sep. 2024" >}}
+Distilled the ViT-B image encoder of the Segment Anything Model (SAM) into MobileNetV4 (22–40× fewer parameters) with feature-level distillation on 1% of SA-1B, staying within 4 mIoU points of the ViT-B teacher at 20 ms latency (8× faster) on a mobile TPU.
+{{< /cv-entry >}}
+
+{{< cv-entry org="Microsoft" role="Research & Development Intern, Bing Geocoding" date="Sep. 2023 – Jun. 2024" >}}
+Validated the DeepCAL address-parsing model and improved its training pipeline.
+{{< /cv-entry >}}
+
+{{< cv-entry org="Appier" role="Backend Engineer Intern" date="Jul. 2023 – Sep. 2023" >}}
+Automated per-customer, per-feature cloud cost tracking, reducing a week of manual estimation to under two minutes.
+{{< /cv-entry >}}
+
+{{< cv-entry org="IT Center, NYCU CS" role="Teaching Assistant, WWW and System Group" date="Jul. 2022 – Jun. 2025" >}}
+Built the backend of the department’s TA contact information system.
+{{< /cv-entry >}}
+
+## Education
+
+{{< cv-entry org="National Yang Ming Chiao Tung University" role="Ph.D. Student in Computer Science (Direct-Entry)" date="Sep. 2025 – Jan. 2027" >}}
+{{< /cv-entry >}}
+
+{{< cv-entry org="National Yang Ming Chiao Tung University" role="B.S. in Computer Science; GPA: 4.23/4.3; Ranking: 8/167" date="Sep. 2021 – Jun. 2025" >}}
+Relevant courses (A+ unless noted): Deep Learning, Machine Learning (A), Artificial Intelligence, Visual Recognition, Advances in 3D Vision, Computer Vision for UAV Autopilot, Image Processing, Probability, Statistics, Linear Algebra
+{{< /cv-entry >}}
+
+{{< cv-entry org="ETH Zurich" role="Exchange Student, Department of Computer Science" date="Sep. 2024 – Feb. 2025" >}}
+Courses: Computer Graphics (6.0/6.0), Visual Computing (6.0/6.0), Computer Vision (5.5/6.0) ([blog post](https://blog.jayinnn.dev/posts/eth/))
+{{< /cv-entry >}}
+
+## Awards
+
+- **Shun-I Chu Zyxel Scholarship (2024):** One of two NYCU CS students selected each year for academic excellence.
+- **[NSTC Research Grant for University Students](https://www.nstc.gov.tw/folksonomy/list/2af9ad9a-1f47-450d-b5a1-2cb43de8290c?l=ch) (2024):** Undergraduate research grant from the National Science and Technology Council, Taiwan, for the project “Unbounded 3D Natural Scene Generation,” advised by Prof. Yu-Lun Liu.
+- **[Third Place, NYCU CS Undergraduate Research Competition](https://www.cs.nycu.edu.tw/storage/materials/xeXTWKdsG4IkteKZGx3lxO6WdeZv4Qi0mgaomFJr.pdf) (2024):** BEVGaussian, generating scene-level 3D Gaussians from bird’s-eye-view (BEV) images.
+- **Bronze Award, ICPC Asia Taoyuan Regional Contest (2022)**
+- **High School Research: Realistic Terrain Generation with GANs:** Turned height maps into realistic terrain and satellite imagery, trained on self-collected elevation and satellite data. Macronix Award, 19th Macronix Science Award (top award; the only recipient in ten years); Second Place, 60th National Primary and High School Science Fair (highest prize awarded); Fourth Prize, 2021 Taiwan International Science Fair. ([code](https://github.com/jayin92/TerrainGAN))
 
 ## Service
 
-- **Reviewer:** ECCV 2026, SIGGRAPH Asia 2026, IJCV
+- **Reviewer:** ECCV 2026, SIGGRAPH Asia 2026, ACCV 2026, WACV 2027, IJCV
 - **Teaching Assistant:** [Image and Video Generation](https://github.com/jayin92/Lab4-FlowMatching), NYCU (2025 Fall)
 
 ## Misc.

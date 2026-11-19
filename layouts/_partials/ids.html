@@ -1,0 +1,6 @@
+{{- /* "a, b,c" -> ["a" "b" "c"] */ -}}
+{{- $out := slice -}}
+{{- range split (. | default "") "," -}}
+  {{- with trim . " " }}{{ $out = $out | append . }}{{ end -}}
+{{- end -}}
+{{- return $out -}}

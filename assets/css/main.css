@@ -1,0 +1,619 @@
+/*
+  jayinnn.dev
+
+  One sans (Lato, the site's original typeface). Colours follow the CV: navy for
+  headings, blue for links, dark red for venues. White only.
+
+  Desktop: teasers and dates sit in a left column, text in a right column, so every
+  description starts on the same edge. Teasers are square. Phone: one column, with
+  each teaser full width (16:9) above its text.
+*/
+
+@font-face {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/fonts/Lato-400.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Lato";
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/fonts/Lato-400-italic.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/fonts/Lato-700.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Lato";
+  font-style: italic;
+  font-weight: 700;
+  font-display: swap;
+  src: url("/fonts/Lato-700-italic.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: url("/fonts/Lato-900.woff2") format("woff2");
+}
+/* † and ‡ (missing from the Latin subset above). */
+@font-face {
+  font-family: "Lato";
+  font-weight: 400;
+  font-display: swap;
+  src: url("/fonts/Lato-400-dagger.woff2") format("woff2");
+  unicode-range: U+2020-2021;
+}
+@font-face {
+  font-family: "Lato";
+  font-weight: 700;
+  font-display: swap;
+  src: url("/fonts/Lato-700-dagger.woff2") format("woff2");
+  unicode-range: U+2020-2021;
+}
+/* Three glyphs only (李杰穎), bold, used by the name heading. */
+@font-face {
+  font-family: "Noto Sans TC Name";
+  font-weight: 700;
+  font-display: swap;
+  src: url("/fonts/NotoSansTC-name.woff2") format("woff2");
+  unicode-range: U+674E, U+6770, U+7A4E;
+}
+
+:root {
+  color-scheme: only light;
+
+  --paper: #ffffff;
+  --ink: #1d1f23;
+  --soft: #44474d;   /* abstracts and descriptions */
+  --muted: #6b6f76;  /* authors, dates, captions */
+  --navy: #002147;   /* CV heading colour */
+  --link: #1e64c8;   /* CV link colour */
+  --venue: #8c1e1e;  /* CV venue colour */
+  --rule: #e4e6ea;
+  --wash: #f2f3f5;
+
+  --side: 11.75rem;  /* left column on desktop: square teasers and dates */
+  --gap: 1.75rem;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: "Lato", "Helvetica Neue", Arial, "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", sans-serif;
+  font-size: 1.0625rem;
+  line-height: 1.45;
+}
+
+.page {
+  max-width: 53rem;
+  margin-inline: auto;
+  padding: 3.5rem 1.5rem 2.5rem;
+}
+
+h1,
+h2,
+h3,
+p,
+ul {
+  margin: 0;
+}
+
+a {
+  color: var(--link);
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.18em;
+}
+a:focus-visible {
+  outline: 2px solid var(--link);
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+
+strong {
+  font-weight: 700;
+}
+
+/* ---------- Header ---------- */
+
+.intro {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  grid-template-areas:
+    "name  avatar"
+    "email avatar"
+    "links avatar";
+  column-gap: 2rem;
+  align-items: end;
+}
+
+.avatar {
+  grid-area: avatar;
+  align-self: center;
+  width: 9rem;
+  height: 9rem;
+  border-radius: 50%;
+  object-fit: cover;
+  background: var(--wash);
+}
+
+.intro-name {
+  grid-area: name;
+}
+
+h1 {
+  font-family: "Lato", "Noto Sans TC Name", "Noto Sans TC", "PingFang TC", sans-serif;
+  color: var(--ink);
+  font-size: 2.6rem;
+  font-weight: 900;
+  line-height: 1.1;
+  letter-spacing: -0.012em;
+}
+
+.name-zh {
+  margin-left: 0.15em;
+  color: var(--muted);
+  font-size: 0.55em;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  white-space: nowrap;
+}
+
+.roles {
+  margin-top: 0.6rem;
+  color: var(--soft);
+  line-height: 1.45;
+}
+
+.email {
+  grid-area: email;
+  margin-top: 0.7rem;
+}
+
+.links {
+  grid-area: links;
+  margin-top: 0.2rem;
+  color: var(--muted);
+}
+
+.interests {
+  margin-top: 1.75rem;
+  padding: 0.8rem 0 0.85rem;
+  border-block: 1px solid var(--rule);
+  line-height: 1.5;
+}
+.interests strong {
+  color: var(--navy);
+}
+
+/* ---------- Prose ---------- */
+
+.prose {
+  margin-top: 1.5rem;
+}
+.prose > p {
+  margin-bottom: 0.75rem;
+}
+
+.prose > ul {
+  padding-left: 1.2rem;
+}
+.prose > ul > li {
+  margin-bottom: 0.3rem;
+  padding-left: 0.2rem;
+}
+.prose > ul > li::marker {
+  color: var(--muted);
+}
+
+h2 {
+  margin: 2.75rem 0 1.25rem;
+  color: var(--navy);
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+/* ---------- Affiliations ---------- */
+
+/* Desktop: three columns sized to their content, captions on one line. */
+.affiliations {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: safe center;
+  gap: 3.5rem;
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.affiliation {
+  display: grid;
+  justify-items: center;
+  align-content: start;
+  line-height: 1.4;
+}
+
+/* A fixed box so a square mark and a wide wordmark read at the same size. */
+.affiliation-logo {
+  display: grid;
+  place-items: center;
+  width: 6rem;
+  height: 3rem;
+  margin-bottom: 0.5rem;
+}
+.affiliation-logo img {
+  display: block;
+  width: auto;
+  height: 3rem;
+  max-width: 6rem;
+  object-fit: contain;
+}
+.affiliation-logo--wide img {
+  height: 1.6rem;
+}
+
+.affiliation-role {
+  color: var(--muted);
+  font-size: 0.85rem;
+  white-space: nowrap;
+}
+
+/* ---------- Publications and projects ---------- */
+
+/* Teaser and text side by side; the text block is centred on the square as one unit. */
+.entry {
+  display: grid;
+  grid-template-columns: var(--side) minmax(0, 1fr);
+  align-items: center;
+  column-gap: var(--gap);
+  margin-bottom: 1.6rem;
+}
+
+.entry-abstract {
+  margin-top: 0.4rem;
+  color: var(--soft);
+  font-size: 1rem;
+  line-height: 1.4;
+}
+.entry-abstract p + p {
+  margin-top: 0.3rem;
+}
+
+.entry-title {
+  color: var(--navy);
+  font-size: 1.1rem;
+  font-weight: 700;
+  line-height: 1.3;
+}
+.entry-title a {
+  color: inherit;
+}
+
+.entry-authors {
+  margin-top: 0.1rem;
+  color: var(--muted);
+  font-size: 0.95rem;
+  line-height: 1.35;
+}
+.entry-authors a {
+  color: inherit;
+}
+.entry-authors a:hover {
+  color: var(--link);
+}
+.entry-authors strong {
+  color: var(--ink);
+}
+
+.entry-meta {
+  margin-top: 0.1rem;
+  font-size: 0.95rem;
+  line-height: 1.35;
+}
+.venue {
+  margin-right: 0.55rem;
+  color: var(--venue);
+  font-weight: 700;
+}
+
+.gh-stars {
+  display: inline-block; /* keeps the hover underline on the word "code" */
+  margin-left: 0.25em;
+  color: var(--muted);
+  font-size: 0.9em;
+}
+
+/* ---------- Teaser media ---------- */
+
+.media {
+  position: relative;
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+  border-radius: 4px;
+  background: var(--wash);
+}
+
+.media picture,
+.media img,
+.media video {
+  position: absolute;
+  inset: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.media[data-media] {
+  cursor: pointer;
+}
+
+/* Diagrams (the SVG project teasers) are shown whole, never cropped. */
+.media--diagram {
+  background: #1e1e22;
+}
+.media--diagram img {
+  object-fit: contain;
+}
+
+.media-top {
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+.is-playing > .media-top {
+  opacity: 1;
+}
+
+/* Play mark on teasers that change on hover. */
+.media-hint {
+  position: absolute;
+  right: 0.45rem;
+  bottom: 0.45rem;
+  width: 1.4rem;
+  height: 1.4rem;
+  border-radius: 50%;
+  background: rgb(0 0 0 / 0.55);
+  transition: opacity 0.2s ease;
+}
+.media-hint::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  width: 0.45rem;
+  height: 0.55rem;
+  margin: auto;
+  translate: 1px 0;
+  background: #fff;
+  clip-path: polygon(0 0, 100% 50%, 0 100%);
+}
+.is-playing > .media-hint {
+  opacity: 0;
+}
+
+/* Labels for before/after stills, e.g. Input / Output. */
+.media-label {
+  position: absolute;
+  left: 0.45rem;
+  bottom: 0.45rem;
+  padding: 0.15rem 0.4rem;
+  border-radius: 3px;
+  background: rgb(0 0 0 / 0.6);
+  color: #fff;
+  font-size: 0.75rem;
+  font-weight: 700;
+  line-height: 1.3;
+  transition: opacity 0.2s ease;
+}
+.media-label--b,
+.is-playing > .media-label--a {
+  opacity: 0;
+}
+.is-playing > .media-label--b {
+  opacity: 1;
+}
+
+/* ---------- Experience and education ---------- */
+
+.cv-entry {
+  display: grid;
+  grid-template-columns: var(--side) minmax(0, 1fr);
+  column-gap: var(--gap);
+  margin-bottom: 0.9rem;
+}
+
+.cv-date {
+  padding-top: 0.08rem;
+  color: var(--muted);
+  font-size: 0.95rem;
+  font-variant-numeric: lining-nums tabular-nums;
+  text-align: right;
+}
+
+.cv-head {
+  line-height: 1.4;
+}
+.cv-head strong {
+  color: var(--navy);
+}
+
+.cv-detail {
+  margin-top: 0.1rem;
+  color: var(--soft);
+  font-size: 1rem;
+  line-height: 1.4;
+}
+.cv-detail p + p,
+.cv-detail p + ul {
+  margin-top: 0.25rem;
+}
+.cv-detail ul {
+  padding-left: 1.1rem;
+}
+
+/* ---------- Footer ---------- */
+
+.footer {
+  margin-top: 3.5rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--rule);
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+.footer p {
+  margin: 0;
+}
+
+/* ---------- Phone ---------- */
+
+@media (max-width: 40rem) {
+  body {
+    font-size: 1rem;
+  }
+
+  .page {
+    padding: 1.75rem 1.1rem 2rem;
+  }
+
+  /* Photo beside the name, links full width underneath. */
+  .intro {
+    grid-template-columns: 4.5rem minmax(0, 1fr);
+    grid-template-areas:
+      "avatar name"
+      "email  email"
+      "links  links";
+    column-gap: 1rem;
+    align-items: center;
+  }
+  .avatar {
+    width: 4.5rem;
+    height: 4.5rem;
+  }
+  h1 {
+    font-size: 1.75rem;
+  }
+  .name-zh {
+    display: block;
+    margin: 0.2rem 0 0;
+    font-size: 0.6em;
+  }
+  .roles {
+    margin-top: 0.35rem;
+    font-size: 0.95rem;
+  }
+  .email {
+    margin-top: 0.9rem;
+  }
+
+  .interests {
+    margin-top: 1.25rem;
+  }
+
+  h2 {
+    margin: 2.5rem 0 1.15rem;
+    font-size: 1.3rem;
+  }
+
+  /* Phone: a short list, logo on the left and the text beside it. */
+  .affiliations {
+    display: grid;
+    gap: 1rem;
+    margin-top: 1.5rem;
+    text-align: left;
+  }
+  .affiliation {
+    grid-template-columns: 4rem minmax(0, 1fr);
+    column-gap: 0.9rem;
+    justify-items: start;
+    align-items: center;
+  }
+  .affiliation-logo {
+    grid-row: 1 / span 4;
+    width: 4rem;
+    height: auto;
+    margin: 0;
+  }
+  .affiliation-logo img {
+    height: 2.5rem;
+    max-width: 4rem;
+  }
+  .affiliation-logo--wide img {
+    height: 1.1rem;
+  }
+  .affiliation strong,
+  .affiliation-role {
+    grid-column: 2;
+  }
+  .affiliation-role {
+    white-space: normal;
+  }
+}
+
+@media (max-width: 40rem) {
+  /* Full-width teaser, all cropped to one shape so the list keeps a steady rhythm. */
+  .entry {
+    display: block;
+    margin-bottom: 1.75rem;
+  }
+  .entry-media {
+    margin-bottom: 0.6rem;
+    padding: 0;
+  }
+  .entry-media .media {
+    aspect-ratio: 16 / 9;
+  }
+  .entry-title {
+    font-size: 1.06rem;
+  }
+  .entry-authors,
+  .entry-meta {
+    font-size: 0.9rem;
+  }
+  .entry-abstract {
+    margin-top: 0.5rem;
+    font-size: 0.95rem;
+  }
+
+  .cv-entry {
+    display: block;
+    margin-bottom: 1rem;
+  }
+  .cv-date {
+    padding: 0;
+    font-size: 0.86rem;
+    text-align: left;
+  }
+  .cv-detail {
+    font-size: 0.95rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .media-top,
+  .media-hint {
+    transition: none;
+  }
+}
