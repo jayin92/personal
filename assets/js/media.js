@@ -33,9 +33,12 @@
     media.addEventListener('pointerenter', (e) => { if (isMouse(e)) start(media); });
     media.addEventListener('pointerleave', (e) => { if (isMouse(e)) stop(media); });
 
-    // Touch: tap to toggle (also covers touchscreen laptops).
-    media.addEventListener('click', (e) => {
-      if (e.pointerType && isMouse(e)) return;
+    // Touch: tap to toggle (also covers touchscreen laptops). Safari reports a finger
+    // tap's click as pointerType "mouse", so use the type of the press that began it.
+    let pressType = '';
+    media.addEventListener('pointerdown', (e) => { pressType = e.pointerType; });
+    media.addEventListener('click', () => {
+      if (pressType === 'mouse' || pressType === 'pen') return;
       if (media.classList.contains('is-playing')) stop(media);
       else start(media);
     });
