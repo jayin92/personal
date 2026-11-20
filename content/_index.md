@@ -5,7 +5,7 @@ name_zh = "李杰穎"
 avatar = "images/avatar.png"
 roles = ["Ph.D. Student @ NYCU CS", "Software Engineer @ Google Pixel Camera"]
 email = "jieying.lee.jay@gmail.com"
-interests = "Robot learning, 3D vision, multimodal sensing, hierarchical VLM–policy systems (agentic robotics)."
+interests = "Robot learning, multimodal perception, VLM agents, 3D vision."
 
 [[links]]
   label = "CV"
@@ -45,7 +45,7 @@ interests = "Robot learning, 3D vision, multimodal sensing, hierarchical VLM–p
 
 I'm a Ph.D. student in [Computer Science](https://www.cs.nycu.edu.tw/?locale=en) at National Yang Ming Chiao Tung University (withdrawing in Jan. 2027), working with [Prof. Yu-Lun Liu](https://yulunalexliu.github.io/), and a Software Engineer on Google's Pixel Camera Team.
 
-I want to build robots that can work where humans cannot teach them, such as the deep ocean, dense jungles, or outer space. In such places, they need to teach themselves to understand the world from every available sensor and keep improving from their own experience. The core thesis I want to pursue in my PhD is what I call **self-onboarding**: “How can a robot in the real world teach itself to understand signals from any new sensor, and then use them to keep improving through its own experience?”
+I want to build robots that can explore the world by themselves and work where humans cannot teach them, such as the deep ocean, dense jungles, or outer space. Equipped with sensors for signals that humans cannot perceive, they can have superhuman abilities in such places. But they first need to teach themselves to understand the world from every available sensor and keep improving from their own experience. The core thesis I want to pursue in my PhD is what I call **self-onboarding**: “How can a robot in the real world teach itself to understand signals from any new sensor, and then use them to keep improving through its own experience?”
 
 I received my B.S. in Computer Science from National Yang Ming Chiao Tung University, with an exchange semester at ETH Zurich. My industry experience includes internships at Google (Pixel Camera Team), Microsoft, and Appier.
 
