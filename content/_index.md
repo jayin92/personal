@@ -3,7 +3,7 @@ title = "Jie-Ying Lee 李杰穎"
 name = "Jie-Ying Lee"
 name_zh = "李杰穎"
 avatar = "images/avatar.png"
-roles = ["Student Researcher @ NYCU CS", "Software Engineer @ Google Pixel Camera"]
+roles = ["Ph.D. Student @ NYCU CS", "Software Engineer @ Google Pixel Camera"]
 email = "jieying.lee.jay@gmail.com"
 interests = "Robot learning, 3D vision, multimodal sensing, hierarchical VLM–policy systems (agentic robotics)."
 
@@ -36,16 +36,16 @@ interests = "Robot learning, 3D vision, multimodal sensing, hierarchical VLM–p
 [[affiliations]]
   name = "NYCU"
   logo = "images/logos/nycu.png"
-  titles = ["Ph.D. Student (2025 - Present)", "Student Researcher (2023 - Present)", "B.S in Computer Science (2021 - 2025)"]
+  titles = ["Ph.D. Student (2025 - Jan. 2027, withdrawing)", "Student Researcher (2023 - Present)", "B.S in Computer Science (2021 - 2025)"]
 [[affiliations]]
   name = "ETH Zurich"
   logo = "images/logos/eth.png"
   titles = ["Exchange Student (2024 - 2025)"]
 +++
 
-I'm a student researcher in [Computer Science](https://www.cs.nycu.edu.tw/?locale=en) at National Yang Ming Chiao Tung University, working with [Prof. Yu-Lun Liu](https://yulunalexliu.github.io/), and a Software Engineer on Google's Pixel Camera Team.
+I'm a Ph.D. student in [Computer Science](https://www.cs.nycu.edu.tw/?locale=en) at National Yang Ming Chiao Tung University (withdrawing in Jan. 2027), working with [Prof. Yu-Lun Liu](https://yulunalexliu.github.io/), and a Software Engineer on Google's Pixel Camera Team.
 
-Robot policies trained with human data are strong, but they are limited by what humans can demonstrate. I want to study how robots can learn to use a new sensor on their own. Once robots can do this, they can complete tasks no human can. The core thesis I want to pursue in my PhD is what I call **self-onboarding**: “How can a robot in the real world teach itself to leverage signals from any new sensor, without new human demonstrations or hand-designed mechanisms?”
+I want to build robots that can work where humans cannot teach them, such as the deep ocean, dense jungles, or outer space. In such places, they need to teach themselves to understand the world from every available sensor and keep improving from their own experience. The core thesis I want to pursue in my PhD is what I call **self-onboarding**: “How can a robot in the real world teach itself to understand signals from any new sensor, and then use them to keep improving through its own experience?”
 
 I received my B.S. in Computer Science from National Yang Ming Chiao Tung University, with an exchange semester at ETH Zurich. My industry experience includes internships at Google (Pixel Camera Team), Microsoft, and Appier.
 
@@ -287,7 +287,7 @@ Built the backend of the department’s TA contact information system.
 
 ## Education
 
-{{< cv-entry org="National Yang Ming Chiao Tung University" role="Ph.D. Student in Computer Science (Direct-Entry)" date="Sep. 2025 – Jan. 2027" >}}
+{{< cv-entry org="National Yang Ming Chiao Tung University" role="Ph.D. Student in Computer Science (Direct-Entry); withdrawing in Jan. 2027" date="Sep. 2025 – Jan. 2027" >}}
 {{< /cv-entry >}}
 
 {{< cv-entry org="National Yang Ming Chiao Tung University" role="B.S. in Computer Science; GPA: 4.23/4.3; Ranking: 8/167" date="Sep. 2021 – Jun. 2025" >}}
