@@ -5,7 +5,7 @@ name_zh = "李杰穎"
 avatar = "images/avatar.png"
 roles = ["Ph.D. Student @ NYCU CS", "Software Engineer @ Google Pixel Camera"]
 email = "jieying.lee.jay@gmail.com"
-interests = "Robot learning, multimodal perception, VLM agents, 3D vision."
+interests = "Robot learning, VLM agents, computer vision."
 
 [[links]]
   label = "CV"
@@ -45,7 +45,7 @@ interests = "Robot learning, multimodal perception, VLM agents, 3D vision."
 
 I'm a Ph.D. student in [Computer Science](https://www.cs.nycu.edu.tw/?locale=en) at National Yang Ming Chiao Tung University (withdrawing in Jan. 2027), working with [Prof. Yu-Lun Liu](https://yulunalexliu.github.io/), and a Software Engineer on Google's Pixel Camera Team.
 
-I want to build robots that can explore the world by themselves and work where humans cannot teach them, such as the deep ocean, dense jungles, or outer space. Equipped with sensors for signals that humans cannot perceive, they can have superhuman abilities in such places. But they first need to teach themselves to understand the world from every available sensor and keep improving from their own experience. The core thesis I want to pursue in my PhD is what I call **self-onboarding**: “How can a robot in the real world teach itself to understand signals from any new sensor, and then use them to keep improving through its own experience?”
+I am curious about places I have never been to, but many are hard to reach, like the deep ocean, dense jungles, or outer space. I want to build robots that explore and work in these places, where human senses are often not enough. Equipped with new sensors beyond human senses, they can even do what humans cannot. However, a new sensor has no training data beforehand, so the robot needs to teach itself. The thesis I want to pursue in my PhD is what I call **self-onboarding**: “How can a robot in the real world teach itself to understand signals from any new sensor, and then use them to keep improving and adapting to new environments, through its own experience?”
 
 I received my B.S. in Computer Science from National Yang Ming Chiao Tung University, with an exchange semester at ETH Zurich. My industry experience includes internships at Google (Pixel Camera Team), Microsoft, and Appier.
 
