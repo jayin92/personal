@@ -5,20 +5,20 @@ name_zh = "李杰穎"
 avatar = "images/avatar.png"
 roles = ["Ph.D. Student @ NYCU CS", "Software Engineer @ Google Pixel Camera"]
 email = "jieying.lee.jay@gmail.com"
-interests = "Robot learning, VLM agents, computer vision."
+interests = "Robot learning, VLM agents, multimodal sensing, computer vision."
 
 [[links]]
   label = "CV"
   url = "https://mozilla.github.io/pdf.js/web/viewer.html?file=https://raw.githubusercontent.com/jayin92/CV/main/cv.pdf"
 [[links]]
   label = "Scholar"
-  url = "https://scholar.google.com/citations?view_op=list_works&hl=zh-TW&user=mKB6voEAAAAJ"
+  url = "https://scholar.google.com/citations?view_op=list_works&hl=en&user=mKB6voEAAAAJ"
 [[links]]
   label = "LinkedIn"
   url = "https://www.linkedin.com/in/jayinnn/"
 [[links]]
   label = "GitHub"
-  url = "http://github.com/jayin92"
+  url = "https://github.com/jayin92"
 [[links]]
   label = "X"
   url = "https://x.com/jayinnn"
@@ -32,22 +32,22 @@ interests = "Robot learning, VLM agents, computer vision."
 [[affiliations]]
   name = "Google"
   logo = "images/logos/google.png"
-  titles = ["SWE (2025 - Present)"]
+  titles = ["SWE (2025 – Present)"]
 [[affiliations]]
   name = "NYCU"
   logo = "images/logos/nycu.png"
-  titles = ["Ph.D. Student (2025 - Jan. 2027, withdrawing)", "Student Researcher (2023 - Present)", "B.S in Computer Science (2021 - 2025)"]
+  titles = ["Ph.D. Student (2025 – Jan. 2027, withdrawing)", "Student Researcher (2023 – Present)", "B.S. in Computer Science (2021 – 2025)"]
 [[affiliations]]
   name = "ETH Zurich"
   logo = "images/logos/eth.png"
-  titles = ["Exchange Student (2024 - 2025)"]
+  titles = ["Exchange Student (2024 – 2025)"]
 +++
 
 I'm a Ph.D. student in [Computer Science](https://www.cs.nycu.edu.tw/?locale=en) at National Yang Ming Chiao Tung University (withdrawing in Jan. 2027), working with [Prof. Yu-Lun Liu](https://yulunalexliu.github.io/), and a Software Engineer on Google's Pixel Camera Team.
 
 I am curious about places I have never been to, but many are hard to reach, like the deep ocean, dense jungles, or outer space. I want to build robots that explore and work in these places, where human senses are often not enough. Equipped with new sensors beyond human senses, they can even do what humans cannot. However, a new sensor has no training data beforehand, so the robot needs to teach itself. The thesis I want to pursue in my PhD is what I call **self-onboarding**: “How can a robot in the real world teach itself to understand signals from any new sensor, and then use them to keep improving and adapting to new environments, through its own experience?”
 
-I received my B.S. in Computer Science from National Yang Ming Chiao Tung University, with an exchange semester at ETH Zurich. My industry experience includes internships at Google (Pixel Camera Team), Microsoft, and Appier.
+I received my B.S. in Computer Science from National Yang Ming Chiao Tung University, with an exchange semester at ETH Zurich. My industry experience includes a full-time Software Engineer role and an internship at Google (Pixel Camera Team), and internships at Microsoft and Appier.
 
 **I am applying to PhD programs this cycle (Fall 2027 intake) and am actively seeking research collaborations.** If you are interested in working with me, don't hesitate to reach out.
 
@@ -70,7 +70,7 @@ I received my B.S. in Computer Science from National Yang Ming Chiao Tung Univer
     pdf="https://arxiv.org/pdf/2510.15869"
     video-link="https://youtu.be/zj2-aGSe6ao"
 >}}
-Satellite images and a pretrained diffusion model are enough to build city-block scale 3D scenes you can fly through in real time.
+Satellite images and a pretrained diffusion model are enough to build city-block-scale 3D scenes you can fly through in real time.
 
 🎬 Featured in <a href="https://www.youtube.com/watch?v=VWdmXlRpL84" target="_blank" rel="noopener noreferrer"><em>This AI Just Fixed Google Earth's Biggest Problem</em></a> by <a href="https://bilawal.ai/" target="_blank" rel="noopener noreferrer">Bilawal Sidhu</a> — <strong>230K+ views</strong> on YouTube.
 {{< /publication-with-teaser >}}
@@ -229,7 +229,7 @@ Adding physically-based shading and deformation to Gaussian splats lets you reco
     report="https://blog.jayinnn.dev/eth-cg24/project/"
     slides="https://blog.jayinnn.dev/eth-cg24/rendering-competition-slides.pdf"
 >}}
-Built a complete physically-based renderer in C++ on top of the Nori 2 educational framework. Selected as a finalist of the course rendering competition.
+Extended the Nori ray tracer in C++ with path tracing, multiple importance sampling, and dielectrics; in a two-person final project, implemented heterogeneous participating media with volumetric path tracing to render a waterfall cave; selected as a finalist in the course rendering competition.
 {{< /publication-with-teaser >}}
 
 {{< publication-with-teaser
