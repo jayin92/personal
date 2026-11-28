@@ -45,7 +45,7 @@ interests = "Robot learning, VLM agents, multimodal sensing, computer vision."
 
 I'm a Ph.D. student in [Computer Science](https://www.cs.nycu.edu.tw/?locale=en) at National Yang Ming Chiao Tung University (withdrawing in Jan. 2027), working with [Prof. Yu-Lun Liu](https://yulunalexliu.github.io/), and a Software Engineer on Google's Pixel Camera Team.
 
-I am curious about places I have never been to, but many are hard to reach, like the deep ocean, dense jungles, or outer space. I want to build robots that explore and work in these places, where human senses are often not enough. Equipped with new sensors beyond human senses, they can even do what humans cannot. However, a new sensor has no training data beforehand, so the robot needs to teach itself. The thesis I want to pursue in my PhD is what I call **self-onboarding**: “How can a robot in the real world teach itself to understand signals from any new sensor, and then use them to keep improving and adapting to new environments, through its own experience?”
+I want to build robots that explore and work where humans cannot teach them, such as the deep ocean, dense jungles, or outer space. In these places, robots need new sensors, and hand-crafted models often miss rich information hidden in the raw signals. In my PhD, I want to study what I call **self-onboarding**: a robot’s ability to interpret a new sensor and integrate its readings into a unified belief about its environment, without human intervention.
 
 I received my B.S. in Computer Science from National Yang Ming Chiao Tung University, with an exchange semester at ETH Zurich. My industry experience includes a full-time Software Engineer role and an internship at Google (Pixel Camera Team), and internships at Microsoft and Appier.
 
@@ -68,7 +68,7 @@ I received my B.S. in Computer Science from National Yang Ming Chiao Tung Univer
     arxiv="https://arxiv.org/abs/2510.15869"
     code="https://github.com/jayin92/skyfall-gs"
     pdf="https://arxiv.org/pdf/2510.15869"
-    video-link="https://youtu.be/zj2-aGSe6ao"
+    video-link="https://youtu.be/YRfih-lAmgU"
 >}}
 Satellite images and a pretrained diffusion model are enough to build city-block-scale 3D scenes you can fly through in real time.
 
